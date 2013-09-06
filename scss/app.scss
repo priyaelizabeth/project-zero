@@ -10,7 +10,7 @@ $border-color: #eee;
 $border-color-dk: #000;
 $shadow-color: #ddd;
 $button-bg: #f7f7f7;
-$icon-sprite: 'http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png';
+$icon-sprite: '../images/sprite-spectrum-1x.png';
 
 /* MIXINS */
 @mixin medium-border($side, $color:$border-color-dk) {
@@ -129,6 +129,7 @@ ul {
 		height: 32px;
 		text-align: center;
 		font-size: 1em;
+		background: url($icon-sprite) 30px 3px no-repeat;
 	}
 	.logo-mini .kicker {
 		display: block;
@@ -168,11 +169,11 @@ ul {
 	.nav-sections-button {
 		margin-left: .5em;
 	 	i {
-			background: url($icon-sprite) 0 -89px no-repeat;
+			background: url($icon-sprite) 0 -60px no-repeat;
 		}
 	}
 	.nav-search-button i {
-		background: url($icon-sprite) -21px -93px no-repeat;
+		background: url($icon-sprite) -21px -63px no-repeat;
 	}
 }
 

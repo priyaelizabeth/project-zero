@@ -6,7 +6,7 @@ $h3-font-size: emCalc(26);
 $h4-font-size: emCalc(13);
 $h5-font-size: emCalc(12);
 $h6-font-size: emCalc(10);*/
-/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -215,7 +215,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -1598,7 +1598,7 @@ blockquote p {
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
@@ -1620,7 +1620,7 @@ blockquote p {
 
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid; }
 
   thead {
@@ -3526,7 +3526,7 @@ label.error {
   margin-top: -20px;
   margin-left: -20px;
   border: solid 3px;
-  border-color: #555555 white;
+  border-color: #555 #fff;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
   -webkit-animation-name: rotate;
@@ -3606,7 +3606,7 @@ label.error {
       right: 0px;
       width: 11px;
       height: 14px;
-      border: solid 4px black;
+      border: solid 4px #000;
       border-top: none;
       border-bottom: none; }
     .orbit-container .orbit-timer.paused > span {
@@ -3616,7 +3616,7 @@ label.error {
       height: 14px;
       border: inset 8px;
       border-right-style: solid;
-      border-color: transparent transparent transparent black; }
+      border-color: transparent transparent transparent #000; }
   .orbit-container:hover .orbit-timer > span {
     display: block; }
   .orbit-container .orbit-prev,
@@ -3767,7 +3767,7 @@ label.error {
       width: 95%; } }
 @media print {
   .reveal-modal {
-    background: white !important; } }
+    background: #fff !important; } }
 /* Foundation Joyride */
 .joyride-list {
   display: none; }
@@ -3862,9 +3862,9 @@ label.error {
   text-decoration: none;
   font-size: 30px;
   font-weight: normal;
-  line-height: 0.5 !important; }
+  line-height: .5 !important; }
   .joyride-close-tip:hover, .joyride-close-tip:focus {
-    color: #eeeeee !important; }
+    color: #eee !important; }
 
 .joyride-modal-bg {
   position: fixed;
@@ -3883,9 +3883,9 @@ label.error {
   position: absolute;
   border-radius: 3px;
   z-index: 102;
-  -moz-box-shadow: 0px 0px 30px white;
-  -webkit-box-shadow: 0px 0px 15px white;
-  box-shadow: 0px 0px 15px white; }
+  -moz-box-shadow: 0px 0px 30px #ffffff;
+  -webkit-box-shadow: 0px 0px 15px #ffffff;
+  box-shadow: 0px 0px 15px #ffffff; }
 
 .joyride-expose-cover {
   background: transparent;
@@ -5104,7 +5104,8 @@ ul.disc li {
   .mobile-nav .logo {
     height: 32px;
     text-align: center;
-    font-size: 1em; }
+    font-size: 1em;
+    background: url("../images/sprite-spectrum-1x.png") 30px 3px no-repeat; }
   .mobile-nav .logo-mini .kicker {
     display: block; }
   .mobile-nav .member-tools {
@@ -5134,9 +5135,9 @@ ul.disc li {
   .mobile-nav .nav-sections-button {
     margin-left: .5em; }
     .mobile-nav .nav-sections-button i {
-      background: url("http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png") 0 -89px no-repeat; }
+      background: url("../images/sprite-spectrum-1x.png") 0 -60px no-repeat; }
   .mobile-nav .nav-search-button i {
-    background: url("http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png") -21px -93px no-repeat; }
+    background: url("../images/sprite-spectrum-1x.png") -21px -63px no-repeat; }
 
 .mobile-footer {
   margin-top: 1em; }
@@ -5158,11 +5159,11 @@ ul.disc li {
       vertical-align: 1px;
       margin-left: 5px; }
   .mobile-footer .footer-sections-button i {
-    background: url("http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png") no-repeat 0 -89px white; }
+    background: url("../images/sprite-spectrum-1x.png") no-repeat 0 -89px white; }
   .mobile-footer .footer-back-to-top-button {
     float: right; }
     .mobile-footer .footer-back-to-top-button i {
-      background: url("http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png") no-repeat -154px -111px white; }
+      background: url("../images/sprite-spectrum-1x.png") no-repeat -154px -111px white; }
   .mobile-footer .user-identity {
     border-right: 1px solid #eeeeee;
     text-align: right; }
@@ -5188,7 +5189,7 @@ ul.disc li {
   .mobile-footer .download-app i {
     width: 22px;
     height: 22px;
-    background: url("http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png") no-repeat -97px -168px;
+    background: url("../images/sprite-spectrum-1x.png") no-repeat -97px -168px;
     display: inline-block; }
   .mobile-footer .download-app span {
     vertical-align: 5px; }
@@ -5312,13 +5313,13 @@ article h1 {
   height: 17px; }
 .share-tools-list .share-button i,
 .share-tools-list-bottom .share-button i {
-  background: url("http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png") no-repeat -42px -92px; }
+  background: url("../images/sprite-spectrum-1x.png") no-repeat -42px -92px; }
 .share-tools-list .save-button i,
 .share-tools-list-bottom .save-button i {
-  background: url("http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png") no-repeat -66px -93px; }
+  background: url("../images/sprite-spectrum-1x.png") no-repeat -66px -93px; }
 .share-tools-list .comments-button i,
 .share-tools-list-bottom .comments-button i {
-  background: url("http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png") no-repeat -88px -93px; }
+  background: url("../images/sprite-spectrum-1x.png") no-repeat -88px -93px; }
 
 .share-tools-list {
   float: right;
