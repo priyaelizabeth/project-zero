@@ -52,7 +52,7 @@ $em-base: 16 !default;
 $default-float: left;
 
 $body-font-color: #333;
-$body-font-family: Georgia, "Times New Roman", serif;
+$body-font-family: Arial, Helvetica, sans-serif;
 
 // Colors
 
@@ -69,7 +69,7 @@ $total-columns: 12;
 
 // Typography Variables
 // Control header font styles
-$header-font-family: Georgia, Times, "Times New Roman", serif;
+$header-font-family: $body-font-family;
 $header-font-weight: 800;
 $header-font-color: #1a1a1a;
 $header-line-height: 1.2;
@@ -143,7 +143,7 @@ $topbar-breakpoint: emCalc(9999);
 $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 // Background color for the top bar
-$topbar-font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+$topbar-font-family: $body-font-family;
 $topbar-bg: #fff;
 $topbar-margin-bottom: emCalc(20);
 $topbar-title-weight: normal;

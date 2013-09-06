@@ -5,14 +5,12 @@
 @import "normalize";
 @import "foundation.scss";
 
-
-$chelt: nyt-cheltenham, Georgia, Times, "Times New Roman", serif;
-$franklin: nyt-franklin, Arial, Helvetica, sans-serif;
-$georgia: Georgia, Times, "Times New Roman", serif;
 $arial: Arial, Helvetica, sans-serif;
 $border-color: #eee;
 $border-color-dk: #000;
 $shadow-color: #ddd;
+$button-bg: #f7f7f7;
+$icon-sprite: 'http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png';
 
 /* MIXINS */
 @mixin medium-border($side, $color:$border-color-dk) {
@@ -34,12 +32,21 @@ $shadow-color: #ddd;
 	line-height: 1.167;
 }
 
+@mixin image-button {
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+@mixin semi-trans-panel {
+	background: rgba(255,255,255,.9);
+}
 
 // GENERAL NYT STYLES
 
 // Typography
 body {
-	font-family: $georgia;
+	font-family: $arial;
 }
 
 .kicker,
@@ -51,7 +58,9 @@ article .dateline,
 .lede-image figcaption,
 .share-tools-list-bottom,
 .up-next .return-home a,
-.subsection-related-list a {
+.subsection-related-list a,
+.button,
+.logo {
 	font-family: $arial;
 }
 
@@ -76,13 +85,22 @@ ul {
 }
 
 // Other
+
+.timestamp {
+	color: $alert-color;
+	font-weight: normal;
+	font-size: emCalc(12);
+	text-transform: uppercase;
+}
 .button {
-	border: none;
-	background: none;
-	padding: 0;
+	border-color: $border-color;
+	background: $button-bg;
 	color: $primary-color;
 	font-size: emCalc(11);
 	margin-bottom: 5px;
+	&.tiny { font-size: emCalc(11); }
+	&.small { font-size: emCalc(12); }
+	&.medium { font-size: 1em; }
 	i {
 		display: inline-block;
 		text-indent: -9999px;
@@ -91,9 +109,8 @@ ul {
 		box-shadow: none;
 		background: none;
 	}
-	&:hover {
-		background: none;
-	}
+	&:hover { background-color: $button-bg; }
+	&:focus { background-color: $button-bg; }
 }
 
 .row {
@@ -111,14 +128,10 @@ ul {
 	.logo {
 		height: 32px;
 		text-align: center;
-		background: url(http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png) no-repeat center 6px;
-		text-indent: -9999px;
-		a {
-			display: block;
-			width: 191px;
-			height: 32px;
-			margin: auto;
-		}
+		font-size: 1em;
+	}
+	.logo-mini .kicker {
+		display: block;
 	}
 	.member-tools {
 		text-align: center;
@@ -136,10 +149,7 @@ ul {
 			}
 		}
 	}
-	.button {
-		background-color: #F7F7F7;
-		&:hover { background-color: #F7F7F7; }
-		border: 1px solid $border-color;
+	.masthead-row .button {
 		padding: 6px 5px;
 		width: 40px;
 		height: 32px;
@@ -151,14 +161,18 @@ ul {
 			display: none;
 		}
 	}
-	.nav-sections-button i {
-		background: url(http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png) 0 -89px no-repeat;
-	}
+	.nav-sections-button,
 	.nav-search-button {
 		float: right;
-		i {
-			background: url(http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png) -21px -93px no-repeat;
+	}
+	.nav-sections-button {
+		margin-left: .5em;
+	 	i {
+			background: url($icon-sprite) 0 -89px no-repeat;
 		}
+	}
+	.nav-search-button i {
+		background: url($icon-sprite) -21px -93px no-repeat;
 	}
 }
 
@@ -173,6 +187,7 @@ ul {
 		color: $primary-color;
 	}
 	.button {
+		@include image-button;
 		.icon {
 			width: 14px;
 			height: 14px;
@@ -183,11 +198,11 @@ ul {
 		}
 	}
 	.footer-sections-button i {
-		background: url(http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png) no-repeat 0 -89px #fff;
+		background: url($icon-sprite) no-repeat 0 -89px #fff;
 	}
 	.footer-back-to-top-button {
 		float: right;
-		i { background: url(http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png) no-repeat -154px -111px #fff; }
+		i { background: url($icon-sprite) no-repeat -154px -111px #fff; }
 	}
 	.user-identity {
 		@include thin-border(right);
@@ -219,7 +234,7 @@ ul {
 		i {
 			width: 22px;
 			height: 22px;
-			background: url(http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png) no-repeat -97px -168px;
+			background: url($icon-sprite) no-repeat -97px -168px;
 			display: inline-block;
 		}
 		span {
@@ -263,7 +278,8 @@ h3 {
 	}
 }
 
-.top-news .story {
+.story {
+	@include clearfix;
 	&:not(:last-child) {
 		margin-bottom: .5em;
 	}
@@ -278,13 +294,17 @@ h3 {
 		float: right;
 		margin: 0 0 emCalc(10) emCalc(10);
 	}
+	.thumb.float-left {
+		float: left;
+		margin: 0 emCalc(10) emCalc(10) 0;
+	}
 }
 
-.homepage .top-news .story:first-child {
+.homepage .story:first-child {
 	@include thin-border(bottom, $border-color-dk);
 }
 
-.homepage .top-news .story:last-child {
+.homepage .story:last-child {
 	border-bottom: none;
 }
 
@@ -357,18 +377,21 @@ article {
 
 .share-tools-list,
 .share-tools-list-bottom {
+	.button {
+		@include image-button;
+	}
 	.button .icon {
 		width: 20px;
 		height: 17px;
 	}
 	.share-button i {
-		background: url(http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png) no-repeat -42px -92px;
+		background: url($icon-sprite) no-repeat -42px -92px;
 	}
 	.save-button i {
-		background: url(http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png) no-repeat -66px -93px;
+		background: url($icon-sprite) no-repeat -66px -93px;
 	}
 	.comments-button i {
-		background: url(http://mobile.nytimes.com/static/1e681fa251c200ce8117dbcb590f4066e41ddf73/images/sprite-1x.png) no-repeat -88px -93px;
+		background: url($icon-sprite) no-repeat -88px -93px;
 	}
 }
 
@@ -416,3 +439,43 @@ article {
 	}
 }
 
+// CHOICEY SCREEN
+
+.option-1 {
+	margin: 2em 0;
+}
+.option-divider {
+	height: 1px;
+	background-color: $border-color;
+	text-align: center;
+	margin-bottom: 1.5em;
+	font-style: italic;
+	@include thin-border(top);
+	span {
+		background-color: #fff;
+		position: relative;
+		top: -0.6em;
+		padding: 0 10px;
+	}
+}
+
+.choicey-options {
+	.row,
+	.story {
+		border: none;
+	}
+	.story h2 {
+		font-weight: normal;
+	}
+}
+
+.choicey-callback-panel {
+	z-index: 100;
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	padding: .5em;
+	text-align: center;
+	width: 100%;
+	@include semi-trans-panel;
+}
