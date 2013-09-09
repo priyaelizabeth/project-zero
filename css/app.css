@@ -5096,6 +5096,10 @@ ul.disc li {
   margin: 5px 0; }
   .mobile-nav .masthead-row {
     padding: 2px; }
+    .mobile-nav .masthead-row .masthead-buttons-right {
+      padding-right: 2px; }
+    .mobile-nav .masthead-row .masthead-buttons-left {
+      padding-left: 2px; }
   .mobile-nav .logo {
     height: 32px; }
     .mobile-nav .logo a {
@@ -5137,6 +5141,9 @@ ul.disc li {
       background: url("../images/sprite-spectrum-1x.png") 0 -59px no-repeat; }
   .mobile-nav .nav-search-button i {
     background: url("../images/sprite-spectrum-1x.png") -21px -63px no-repeat; }
+  .mobile-nav .nav-back-button .button {
+    width: 60px;
+    padding-top: 9px; }
 
 .mobile-footer {
   margin-top: 1em; }

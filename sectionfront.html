@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>NYT Section Front &mdash; World</title>
+  <title>Section Front &mdash; World</title>
 
   
   <link rel="stylesheet" href="css/app.css">
@@ -18,10 +18,15 @@
 <body>
 	<header class="mobile-nav show-for-small">
 		<div class="row masthead-row">
-			<div class="columns small-6 small-offset-3 logo logo">
-					<a href="#">Quickreads</a>
+			<div class="columns small-4 masthead-buttons-left">
+				<div class="nav-back-button">
+					<a href="javascript:void(0);" id="back" class="button">&laquo; Back</a>
+				</div>
 			</div>
-			<div class="columns small-3">
+			<div class="columns small-4 logo">
+					<a href="index.html">Spectrum</a>
+			</div>
+			<div class="columns small-4 masthead-buttons-right">
 				<div class="nav-sections-button">
 					<a href="#" class="button"><i class="icon"></i><span>Sections</span></a>
 				</div>
@@ -208,6 +213,7 @@
 	  <script src="js/foundation/foundation.tooltips.js"></script>
 	  <script src="js/foundation/foundation.topbar.js"></script>
 	  <script src="js/foundation/foundation.interchange.js"></script>
+	  <script src="js/app/app.js"></script>
 	  <script>
 	    $(document).foundation();
 	  </script>
