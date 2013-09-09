@@ -79,12 +79,12 @@ $header-top-margin: .1em;
 $header-bottom-margin: .1em;
 
 // Control header font sizes
-/*$h1-font-size: emCalc(26);
+$h1-font-size: emCalc(32);
 $h2-font-size: emCalc(26);
 $h3-font-size: emCalc(26);
 $h4-font-size: emCalc(13);
 $h5-font-size: emCalc(12);
-$h6-font-size: emCalc(10);*/
+$h6-font-size: emCalc(10);
 
 // Style paragraphs
 
@@ -120,7 +120,7 @@ $hr-border-color: #eee;
 // We use these to control button text styles.
 
 // $button-font-family: inherit;
-$button-font-color: $primary-color;
+$button-font-color: $white-text;
 $button-font-color-alt: $secondary-color;
 // $button-font-med: emCalc(16);
 // $button-font-tny: emCalc(11);

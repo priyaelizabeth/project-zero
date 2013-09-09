@@ -9,8 +9,7 @@ $arial: Arial, Helvetica, sans-serif;
 $border-color: #eee;
 $border-color-dk: #000;
 $shadow-color: #ddd;
-$button-bg: #f7f7f7;
-$button2-bg: #a0bfd6;
+$button-bg: #8099ab;
 $icon-sprite: '../images/sprite-spectrum-1x.png';
 
 /* MIXINS */
@@ -22,9 +21,9 @@ $icon-sprite: '../images/sprite-spectrum-1x.png';
   border-#{$side}: 1px solid $color;
 }
 
-@mixin shadow($side) {
+/* @mixin shadow($side) {
 	box-shadow: 1px 2px 2px $shadow-color;
-}
+} */
 
 @mixin subhead-kicker($size) {
 	text-transform: uppercase;
@@ -68,6 +67,7 @@ article .dateline,
 .subsection-header {
 	font-weight: bold;
 	font-size: emCalc(14);
+	color: $primary-color;
 }
 
 .kicker {
@@ -94,14 +94,16 @@ ul {
 	text-transform: uppercase;
 }
 .button {
-	border-color: $border-color;
+	border-width: 0;
+	box-shadow: none;
+	border-radius: 3px;
 	background: $button-bg;
-	color: $primary-color;
+	color: $white-text;
 	font-size: emCalc(11);
 	margin-bottom: 5px;
 	&.tiny { font-size: emCalc(11); }
 	&.small { font-size: emCalc(12); }
-	&.medium { font-size: 1em; }
+	&.medium { font-size: emCalc(14); font-weight: normal; }
 	i {
 		display: inline-block;
 		text-indent: -9999px;
@@ -175,7 +177,7 @@ ul {
 	.nav-sections-button {
 		margin-left: .5em;
 	 	i {
-			background: url($icon-sprite) 0 -60px no-repeat;
+			background: url($icon-sprite) 0 -59px no-repeat;
 		}
 	}
 	.nav-search-button i {
@@ -250,7 +252,7 @@ ul {
 	}
 	.help-links {
 		text-align: center;
-		ul { margin-bottom: 0; }
+		ul { margin-bottom: 20px; }
 		li { display: inline; }
 		li a {
 			font-weight: normal;
@@ -276,6 +278,10 @@ h3 {
 	a:hover {
 		color: $link-color;
 	}
+}
+
+h3 {
+color: $primary-color;	
 }
 
 .top-news,
@@ -308,7 +314,7 @@ h3 {
 }
 
 .homepage .story:first-child {
-	@include thin-border(bottom, $border-color-dk);
+	@include thin-border(bottom, $border-color);
 }
 
 .homepage .story:last-child {
@@ -355,9 +361,10 @@ figure.lede-image {
 
 article {
 	h1 {
-		font-size: emCalc(22);
+		font-size: emCalc(32);
 		line-height: 1.1;
 		font-weight: normal;
+		color: $link-color;
 		margin-bottom: .5em;
 	}
 }
@@ -421,6 +428,7 @@ article {
 		display: inline;
 		vertical-align: 4px;
 		margin: 0 10px 0 4px;
+		color: $link-color;
 	}
 }
 
@@ -456,13 +464,15 @@ article {
 	background-color: $border-color;
 	text-align: center;
 	margin-bottom: 1.5em;
-	font-style: italic;
+	font-style: nomral;
 	@include thin-border(top);
 	span {
-		background-color: #fff;
+		color: #fff;
 		position: relative;
 		top: -0.6em;
-		padding: 0 10px;
+		padding: 7px 9px 8px 9px;
+		background: #8099ab;
+		border-radius: 100px;
 	}
 }
 
@@ -472,6 +482,8 @@ article {
 		border: none;
 	}
 	.story h2 {
+		font-size: emCalc(21);
+		line-height: normal;
 		font-weight: normal;
 	}
 }
@@ -486,3 +498,8 @@ article {
 	width: 100%;
 	@include semi-trans-panel;
 }
+
+.refresh {
+font-size: emCalc(18);
+}
+
