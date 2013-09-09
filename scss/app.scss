@@ -10,6 +10,7 @@ $border-color: #eee;
 $border-color-dk: #000;
 $shadow-color: #ddd;
 $button-bg: #f7f7f7;
+$button2-bg: #a0bfd6;
 $icon-sprite: '../images/sprite-spectrum-1x.png';
 
 /* MIXINS */
@@ -268,7 +269,7 @@ h3 {
 	font-size: emCalc(16);
 	a,
 	a:hover {
-		color: $body-font-color;
+		color: $link-color;
 	}
 }
 
@@ -386,13 +387,13 @@ article {
 		height: 17px;
 	}
 	.share-button i {
-		background: url($icon-sprite) no-repeat -42px -92px;
+		background: url($icon-sprite) no-repeat 0 -92px;
 	}
 	.save-button i {
-		background: url($icon-sprite) no-repeat -66px -93px;
+		background: url($icon-sprite) no-repeat -23px -91px;
 	}
 	.comments-button i {
-		background: url($icon-sprite) no-repeat -88px -93px;
+		background: url($icon-sprite) no-repeat -48px -91px;
 	}
 }
 
