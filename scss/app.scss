@@ -108,7 +108,13 @@ ul {
 	margin-bottom: 5px;
 	&.tiny { font-size: emCalc(11); }
 	&.small { font-size: emCalc(12); }
-	&.medium { font-size: emCalc(14); font-weight: normal; }
+	&.medium { 
+		font-size: emCalc(14); 
+		font-weight: normal;
+		-webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.25);
+		-moz-box-shadow:    0px 1px 3px rgba(50, 50, 50, 0.25);
+		box-shadow:         0px 1px 3px rgba(50, 50, 50, 0.25);
+		 }
 	i {
 		display: inline-block;
 		text-indent: -9999px;
@@ -117,9 +123,15 @@ ul {
 		box-shadow: none;
 		background: none;
 	}
-	&:hover { background-color: $button-bg; }
-	&:focus { background-color: $button-bg; }
+	&:hover { background-color: #444; }
+	&:focus { background-color: #444; }
 }
+
+
+.darkgrey {
+	background-color: #444;
+}
+
 
 .row {
 	padding-top: .5em;

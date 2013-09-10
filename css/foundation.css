@@ -1118,7 +1118,7 @@ small {
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
-  color: #92a7b6; }
+  color: #e2463f; }
 
 /* Lists */
 ul,
@@ -1346,11 +1346,11 @@ button, .button {
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       color: white; }
   button.alert, .button.alert {
-    background-color: #c0ccd5;
-    border-color: #a1b3c1;
+    background-color: #ec8681;
+    border-color: #e55b55;
     color: #cccccc; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
-      background-color: #a1b3c1; }
+      background-color: #e55b55; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       color: #cccccc; }
   button.large, .button.large {
@@ -1424,19 +1424,19 @@ button, .button {
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
         background-color: #5da423; }
     button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
-      background-color: #c0ccd5;
-      border-color: #a1b3c1;
+      background-color: #ec8681;
+      border-color: #e55b55;
       color: #cccccc;
       cursor: default;
       opacity: 0.6;
       -webkit-box-shadow: none;
       box-shadow: none; }
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-        background-color: #a1b3c1; }
+        background-color: #e55b55; }
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
         color: #cccccc; }
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-        background-color: #c0ccd5; }
+        background-color: #ec8681; }
 
 button, .button {
   padding-top: 0.8125em;
@@ -1764,7 +1764,7 @@ fieldset {
   margin-bottom: 1em;
   font-size: 0.75em;
   font-weight: bold;
-  background: #c0ccd5;
+  background: #ec8681;
   color: #333333;
   margin-top: 0; }
 [data-abide] span.error, [data-abide] small.error {
@@ -1777,14 +1777,14 @@ span.error, small.error {
   margin-bottom: 1em;
   font-size: 0.75em;
   font-weight: bold;
-  background: #c0ccd5;
+  background: #ec8681;
   color: #333333; }
 
 .error input,
 .error textarea,
 .error select {
-  border-color: #c0ccd5;
-  background-color: rgba(192, 204, 213, 0.1);
+  border-color: #ec8681;
+  background-color: rgba(236, 134, 129, 0.1);
   margin-bottom: 0; }
   .error input:focus,
   .error textarea:focus,
@@ -1793,7 +1793,7 @@ span.error, small.error {
     border-color: #999999; }
 .error label,
 .error label.error {
-  color: #c0ccd5; }
+  color: #ec8681; }
 .error small.error {
   display: block;
   padding: 0.375em 0.25em;
@@ -1801,29 +1801,29 @@ span.error, small.error {
   margin-bottom: 1em;
   font-size: 0.75em;
   font-weight: bold;
-  background: #c0ccd5;
+  background: #ec8681;
   color: #333333; }
 .error span.error-message {
   display: block; }
 
 input.error,
 textarea.error {
-  border-color: #c0ccd5;
-  background-color: rgba(192, 204, 213, 0.1); }
+  border-color: #ec8681;
+  background-color: rgba(236, 134, 129, 0.1); }
   input.error:focus,
   textarea.error:focus {
     background: #fafafa;
     border-color: #999999; }
 
 .error select {
-  border-color: #c0ccd5;
-  background-color: rgba(192, 204, 213, 0.1); }
+  border-color: #ec8681;
+  background-color: rgba(236, 134, 129, 0.1); }
   .error select:focus {
     background: #fafafa;
     border-color: #999999; }
 
 label.error {
-  color: #c0ccd5; }
+  color: #ec8681; }
 
 /* Button Groups */
 .button-group {
@@ -1993,7 +1993,7 @@ label.error {
   .split.button.secondary span:before {
     border-color: white transparent transparent transparent; }
   .split.button.alert span {
-    border-left-color: #92a7b6; }
+    border-left-color: #e2463f; }
   .split.button.success span {
     border-left-color: #396516; }
   .split.button.tiny {
@@ -2935,9 +2935,9 @@ label.error {
       .top-bar-section ul li > a.button.success.hover {
         background: #457a1a; }
     .top-bar-section ul li > a.button.alert {
-      background: #c0ccd5; }
+      background: #ec8681; }
       .top-bar-section ul li > a.button.alert.hover {
-        background: #a1b3c1; }
+        background: #e55b55; }
   .top-bar-section ul li.hover > a {
     background: #f7f7f7;
     color: #eff0eb; }
@@ -3762,8 +3762,8 @@ label.error {
     border-color: #457a1a;
     color: white; }
   .alert-box.alert {
-    background-color: #c0ccd5;
-    border-color: #a1b3c1;
+    background-color: #ec8681;
+    border-color: #e55b55;
     color: #333333; }
   .alert-box.secondary {
     background-color: #cccccc;
@@ -3968,9 +3968,9 @@ form.custom {
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
   form.custom .error .custom.dropdown {
-    border-color: #c0ccd5;
-    background-color: rgba(192, 204, 213, 0.1);
-    background: rgba(192, 204, 213, 0.1);
+    border-color: #ec8681;
+    background-color: rgba(236, 134, 129, 0.1);
+    background: rgba(236, 134, 129, 0.1);
     margin-bottom: 0; }
     form.custom .error .custom.dropdown:focus {
       background: #fafafa;
@@ -4054,7 +4054,7 @@ kbd {
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
   .label.alert {
-    background-color: #c0ccd5;
+    background-color: #ec8681;
     color: #333333; }
   .label.success {
     background-color: #5da423;
@@ -4226,7 +4226,7 @@ ul.pagination {
     height: 100%;
     display: block; }
   .progress.alert .meter {
-    background: #c0ccd5;
+    background: #ec8681;
     height: 100%;
     display: block; }
   .progress.radius {
