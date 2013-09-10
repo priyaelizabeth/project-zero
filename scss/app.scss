@@ -382,11 +382,13 @@ ul.headlines {
 	}
 }
 
-.quickreads-button i {
+.quickreads-button {
+	i {
 		width: 16px;
 		height: 16px;
 		background: url($icon-sprite) no-repeat 0 -116px;
 	}
+}
 
 // ARTICLE
 
@@ -526,9 +528,6 @@ article {
 		font-size: emCalc(21);
 		line-height: normal;
 		font-weight: normal;
-	}
-	.thumb {
-		max-width: 150px;
 	}
 }
 
