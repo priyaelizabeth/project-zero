@@ -27,9 +27,10 @@ $icon-sprite: '../images/sprite-spectrum-1x.png';
 
 @mixin subhead-kicker($size) {
 	text-transform: uppercase;
+	font-weight: normal;
 	color: $secondary-color;
 	font-size: emCalc($size);
-	line-height: 1.167;
+	line-height: 1.3em;
 }
 
 @mixin image-button {
@@ -278,7 +279,8 @@ ul {
 
 h1,
 h2,
-h3 {
+h3
+ {
 	font-size: emCalc(16);
 	a,
 	a:hover {
@@ -286,8 +288,14 @@ h3 {
 	}
 }
 
+h2 {
+	font-size: emCalc(14);
+	line-height: normal;
+}
+
 h3 {
-color: $primary-color;	
+	font-size: emCalc(16);
+	color: $primary-color;	
 }
 
 .top-news,
@@ -300,16 +308,19 @@ color: $primary-color;
 .story {
 	@include clearfix;
 	&:not(:last-child) {
-		margin-bottom: .5em;
+		margin-bottom: .75em;
 	}
-	padding-bottom: .5em;
+	padding-bottom: .2em;
 	@include thin-border(bottom, $border-color);
 	.summary {
 		font-size: emCalc(13);
-		line-height: 1.5;
+		line-height: 1.3;
+		padding-top:.2em;
 		color: $summary-color;
 	}
 	.thumb {
+		width: 75px;
+		height: 75px;
 		float: right;
 		margin: 0 0 emCalc(10) emCalc(10);
 	}
@@ -358,6 +369,12 @@ ul.headlines {
 		font-size: 1em;
 	}
 }
+
+.quickreads-button i {
+		width: 16px;
+		height: 16px;
+		background: url($icon-sprite) no-repeat 0 -116px;
+	}
 
 // ARTICLE
 
