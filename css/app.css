@@ -5055,6 +5055,9 @@ ul.disc li {
   background: url(http://graphics8.nytimes.com/images/misc/bullet4x4.gif) no-repeat left 0.45em;
   padding: 0 0 0 8px; }
 
+.hidden {
+  opacity: 0; }
+
 .timestamp {
   color: #a81817;
   font-weight: normal;
@@ -5386,9 +5389,6 @@ article h1 {
     font-weight: bold;
     font-style: normal; }
 
-.hidden {
-  opacity: 0; }
-
 .option-1 {
   margin: 2em 0; }
 
@@ -5418,6 +5418,8 @@ article h1 {
   font-size: 1.3125em;
   line-height: normal;
   font-weight: normal; }
+.choicey-options .thumb {
+  max-width: 150px; }
 
 .choicey-callback-panel {
   z-index: 100;

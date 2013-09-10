@@ -87,6 +87,10 @@ ul {
 
 // Other
 
+.hidden {
+	opacity: 0;
+}
+
 .timestamp {
 	color: $alert-color;
 	font-weight: normal;
@@ -458,9 +462,6 @@ article {
 
 // CHOICEY SCREEN
 
-.hidden {
-	opacity: 0;
-}
 .option-1 {
 	margin: 2em 0;
 }
@@ -496,6 +497,9 @@ article {
 		font-size: emCalc(21);
 		line-height: normal;
 		font-weight: normal;
+	}
+	.thumb {
+		max-width: 150px;
 	}
 }
 
