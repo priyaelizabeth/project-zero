@@ -313,10 +313,6 @@ color: $primary-color;
 		float: right;
 		margin: 0 0 emCalc(10) emCalc(10);
 	}
-	.thumb.float-left {
-		float: left;
-		margin: 0 emCalc(10) emCalc(10) 0;
-	}
 }
 
 .homepage .story:first-child {
@@ -462,9 +458,18 @@ article {
 
 // CHOICEY SCREEN
 
+.hidden {
+	opacity: 0;
+}
 .option-1 {
 	margin: 2em 0;
 }
+
+.option-2 .thumb {
+	float: left;
+	margin: 0 emCalc(10) emCalc(10) 0;
+}
+
 .option-divider {
 	height: 1px;
 	background-color: $border-color;
