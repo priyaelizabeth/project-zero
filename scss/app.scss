@@ -383,6 +383,13 @@ ul.headlines {
 }
 
 .quickreads-button {
+	a {
+		vertical-align: top;
+		line-height: 18px;
+		span {
+			vertical-align: 2px;
+		}
+	}
 	i {
 		width: 16px;
 		height: 16px;
