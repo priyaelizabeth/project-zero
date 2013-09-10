@@ -539,9 +539,13 @@ article {
 		border: none;
 	}
 	.story h2 {
-		font-size: emCalc(21);
+		font-size: emCalc(19);
 		line-height: normal;
 		font-weight: normal;
+	}
+	.thumb {
+		width: 130px;
+		height: 90px;
 	}
 }
 
