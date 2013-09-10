@@ -88,6 +88,10 @@ ul {
 
 // Other
 
+.hidden {
+	opacity: 0;
+}
+
 .timestamp {
 	color: $alert-color;
 	font-weight: normal;
@@ -324,10 +328,6 @@ h3 {
 		float: right;
 		margin: 0 0 emCalc(10) emCalc(10);
 	}
-	.thumb.float-left {
-		float: left;
-		margin: 0 emCalc(10) emCalc(10) 0;
-	}
 }
 
 .homepage .story:first-child {
@@ -482,6 +482,12 @@ article {
 .option-1 {
 	margin: 2em 0;
 }
+
+.option-2 .thumb {
+	float: left;
+	margin: 0 emCalc(10) emCalc(10) 0;
+}
+
 .option-divider {
 	height: 1px;
 	background-color: $border-color;
@@ -508,6 +514,9 @@ article {
 		font-size: emCalc(21);
 		line-height: normal;
 		font-weight: normal;
+	}
+	.thumb {
+		max-width: 150px;
 	}
 }
 
