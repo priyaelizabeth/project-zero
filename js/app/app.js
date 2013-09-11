@@ -64,7 +64,7 @@ ChoiceyApp = {
 		s.resetBtn.on("click", function() {
 			localStorage.removeItem('option-counter');
 		});
-		//ChoiceyApp.shuffle(s.greetings);
+		ChoiceyApp.shuffle(s.pool);
 	},
 
 	goBack: function(){
