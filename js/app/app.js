@@ -4,6 +4,12 @@ ChoiceyApp = {
 	settings: {
 		back: $("#back"),
 		refresh: $("#refresh-choices"),
+		greetingEl: $("#greeting"),
+		greetings: [
+			"OK, have you heard about:",
+			"Alright, how about:",
+			"Hmm, what about:"
+		],
 		oEls: [$("#option-1"), $("#option-2")],
 		pool: [
 			{ image: 'http://mjcdn.motherjones.com/preset_51/shampoo.jpg', headline: 'TK Learn about how every time you shampoo you\'re hurting the environment?', link: 'article/dont-lather-dont-rinse-dont-repeat.html' },
@@ -18,8 +24,10 @@ ChoiceyApp = {
 			{ image: 'http://timenewsfeed.files.wordpress.com/2013/09/fold-up-armadillo-car.jpg?w=480&h=320&crop=1', headline: 'TK Hear about the South Korean car nicknamed after a desert animal?', link: 'experimental-armadillo-car-folds-easy-parking.html'}			
 		],
 		oString: '<a href="{1}"><img class="thumb" src="{0}"></a><h2><a href="{1}">{2}</a></h2>',
-		counter: localStorage.getItem('option-counter') || 0,
-		maxOptions: 10
+		oCounter: localStorage.getItem('option-oCounter') || 0,
+		gCounter: 0,
+		maxOptions: 10,
+		maxGreetings: 3
 	},
 
 	init: function() {
@@ -32,7 +40,7 @@ ChoiceyApp = {
 			ChoiceyApp.goBack();
 		});
 		s.refresh.on("click", function() {
-			ChoiceyApp.populateOptions();
+			ChoiceyApp.refreshOptions();
 		})
 	},
 
@@ -40,7 +48,13 @@ ChoiceyApp = {
 		window.history.back();
 	},
 	
-	populateOptions: function() {
+	refreshGreeting: function(){
+		s.greetingEl.text(s.greetings[s.gCounter]);
+		s.gCounter < s.maxGreetings-1 ? s.gCounter++ : s.gCounter = 0;
+	},
+	
+	refreshOptions: function() {
+		ChoiceyApp.refreshGreeting();
 		$.each(s.oEls, function(i,v){
 			v.fadeOut(150, function(){
 				v.html(ChoiceyApp.getNextStory()).fadeIn(150);
@@ -49,9 +63,9 @@ ChoiceyApp = {
 	},
 
 	getNextStory: function() {
-		var str = s.oString.format(s.pool[s.counter].image, s.pool[s.counter].link, s.pool[s.counter].headline);
-		s.counter < s.maxOptions-1 ? s.counter++ : s.counter = 0;
-		localStorage.setItem('option-counter',s.counter);
+		var str = s.oString.format(s.pool[s.oCounter].image, s.pool[s.oCounter].link, s.pool[s.oCounter].headline);
+		s.oCounter < s.maxOptions-1 ? s.oCounter++ : s.oCounter = 0;
+		localStorage.setItem('option-oCounter',s.oCounter);
 		return str;
 	}
 };
