@@ -43,7 +43,7 @@ ChoiceyApp = {
 		maxGreetings: 3,
 		finished: {
 			greeting: "Hope you enjoyed these quick reads. Check back again later for more.",
-			timestamp: "Last updated 15 minutes ago",
+			timestamp: "Last updated 10 minutes ago",
 			homeBtn: $('<a class="button medium expand" id="home-btn" href="index.html">Return to Today’s Headlines</a>'),
 		}
 	},
