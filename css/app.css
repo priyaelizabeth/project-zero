@@ -5421,7 +5421,11 @@ article h1 {
 
 .no-more {
   font-size: 2em;
-  margin-top: 2em; }
+  color: #ced1d4;
+  margin-top: 1.6em;
+  margin-bottom: 2.75em;
+  line-height: 1.2em;
+  font-weight: normal; }
 
 .option-1 {
   margin: 2em 0; }
@@ -5449,8 +5453,8 @@ article h1 {
 .choicey-options .story {
   border: none; }
 .choicey-options .story h2 {
-  font-size: 1.1875em;
-  line-height: 1.2em;
+  font-size: 1.0625em;
+  line-height: 1.05em;
   font-weight: normal; }
 .choicey-options .thumb {
   width: 130px;
