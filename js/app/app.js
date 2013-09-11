@@ -33,7 +33,7 @@ ChoiceyApp = {
 			],
 			[
 				{ image: 'images/volcano.jpg', headline: 'A volcano at the bottom of the Pacific Ocean the size of New Mexico', link: 'article/volcano-discovered-in-pacific.html' },
-				{ image: 'images/armadillo.jpg', headline: 'The South Korean car that folds up when you park it', link: 'experimental-armadillo-car-folds-easy-parking.html'}
+				{ image: 'images/armadillo.jpg', headline: 'The South Korean car that folds up when you park it', link: 'article/experimental-armadillo-car-folds-easy-parking.html'}
 			]
 		],
 		oString: '<a href="{1}"><img class="thumb" src="{0}"></a><h2><a href="{1}">{2}</a></h2>',
