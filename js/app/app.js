@@ -73,7 +73,7 @@ ChoiceyApp = {
 	
 	refreshGreeting: function(msg){
 		if(msg){
-			s.greetingEl.text(msg);
+			s.greetingEl.text(msg).addClass('no-more');
 		} else {
 			s.greetingEl.text(s.greetings[s.gCounter]);
 			s.gCounter < s.maxGreetings-1 ? s.gCounter++ : s.gCounter = 0;
