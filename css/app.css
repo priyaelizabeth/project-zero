@@ -5048,7 +5048,8 @@ article .dateline,
   font-weight: normal;
   color: #cccccc;
   font-size: 0.625em;
-  line-height: 1.3em; }
+  line-height: normal;
+  margin-bottom: 10px; }
 
 ul li {
   list-style-type: none; }
@@ -5313,8 +5314,8 @@ figure.lede-image {
   margin-bottom: 1em; }
 
 article h1 {
-  font-size: 2em;
-  line-height: 1.1;
+  font-size: 1.625em;
+  line-height: 1em;
   font-weight: normal;
   color: #606974;
   margin-bottom: .5em; }
@@ -5441,8 +5442,8 @@ article h1 {
 .choicey-options .story {
   border: none; }
 .choicey-options .story h2 {
-  font-size: 1.1875em;
-  line-height: normal;
+  font-size: 1.0625em;
+  line-height: 1em;
   font-weight: normal; }
 .choicey-options .thumb {
   width: 130px;
@@ -5460,3 +5461,22 @@ article h1 {
 
 .refresh {
   font-size: 1.125em; }
+
+.logo-small {
+  height: 18px; }
+  .logo-small a {
+    background: url("../images/sprite-spectrum-1x.png") 0 -38px no-repeat;
+    text-indent: -9999px;
+    display: block;
+    width: 72px;
+    height: 14px;
+    margin: auto;
+    clear: both; }
+
+.sub-head {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 0.75em;
+  margin-top: 3px;
+  text-align: center;
+  color: #606974; }
