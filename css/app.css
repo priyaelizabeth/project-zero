@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* THIS IS THE REAL ONE */
-/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -209,7 +209,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -1586,7 +1586,7 @@ blockquote p {
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
@@ -1608,7 +1608,7 @@ blockquote p {
 
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid; }
 
   thead {
@@ -3514,7 +3514,7 @@ label.error {
   margin-top: -20px;
   margin-left: -20px;
   border: solid 3px;
-  border-color: #555555 white;
+  border-color: #555 #fff;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
   -webkit-animation-name: rotate;
@@ -3594,7 +3594,7 @@ label.error {
       right: 0px;
       width: 11px;
       height: 14px;
-      border: solid 4px black;
+      border: solid 4px #000;
       border-top: none;
       border-bottom: none; }
     .orbit-container .orbit-timer.paused > span {
@@ -3604,7 +3604,7 @@ label.error {
       height: 14px;
       border: inset 8px;
       border-right-style: solid;
-      border-color: transparent transparent transparent black; }
+      border-color: transparent transparent transparent #000; }
   .orbit-container:hover .orbit-timer > span {
     display: block; }
   .orbit-container .orbit-prev,
@@ -3755,7 +3755,7 @@ label.error {
       width: 95%; } }
 @media print {
   .reveal-modal {
-    background: white !important; } }
+    background: #fff !important; } }
 /* Foundation Joyride */
 .joyride-list {
   display: none; }
@@ -3850,9 +3850,9 @@ label.error {
   text-decoration: none;
   font-size: 30px;
   font-weight: normal;
-  line-height: 0.5 !important; }
+  line-height: .5 !important; }
   .joyride-close-tip:hover, .joyride-close-tip:focus {
-    color: #eeeeee !important; }
+    color: #eee !important; }
 
 .joyride-modal-bg {
   position: fixed;
@@ -3871,9 +3871,9 @@ label.error {
   position: absolute;
   border-radius: 3px;
   z-index: 102;
-  -moz-box-shadow: 0px 0px 30px white;
-  -webkit-box-shadow: 0px 0px 15px white;
-  box-shadow: 0px 0px 15px white; }
+  -moz-box-shadow: 0px 0px 30px #ffffff;
+  -webkit-box-shadow: 0px 0px 15px #ffffff;
+  box-shadow: 0px 0px 15px #ffffff; }
 
 .joyride-expose-cover {
   background: transparent;
@@ -5420,18 +5420,17 @@ article h1 {
   margin-bottom: 1em; }
 
 .no-more {
-  font-size: 2em;
+  font-size: 1.625em;
   color: #ced1d4;
-  margin-top: 1.6em;
-  margin-bottom: 2.75em;
-  line-height: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  line-height: 1.15em;
   font-weight: normal; }
 
 .no-more-check {
   width: 84px;
   height: 84px;
-  margin-top: 1em;
-  margin-bottom: .5em; }
+  margin-top: 1em; }
 
 .option-1 {
   margin: 2em 0; }

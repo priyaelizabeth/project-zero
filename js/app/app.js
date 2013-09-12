@@ -31,7 +31,7 @@ ChoiceyApp = {
 				{ image: 'images/internet.jpg', headline: 'The discovery that the NSA has ability to bypass a variety of digital encryption tools', link: 'article/after-nsa-can-we-trust.html' }
 			],
 			[
-				{ image: 'images/chain.jpg', headline: 'This group of Catalans that formed a 250-mile human chain across the northeastern region of Spain', link: 'article/catalans-form-human-chain-spain-separation-bid.html' },
+				{ image: 'images/chain.jpg', headline: 'This group of Catalans that formed a human chain across a region of Spain', link: 'article/catalans-form-human-chain-spain-separation-bid.html' },
 				{ image: 'images/armadillo.jpg', headline: 'The South Korean car that folds up when you park it', link: 'article/experimental-armadillo-car-folds-easy-parking.html' }
 			],
 			[
