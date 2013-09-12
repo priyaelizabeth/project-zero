@@ -8,7 +8,6 @@ ChoiceyApp = {
 		greetingEl: $("#greeting"),
 		greetings: [
 			"OK, have you heard about:",
-			"Alright, how about:",
 			"Hmm, what about:"
 		],
 		stories: [$("#option-1"),$("#option-2")],
@@ -21,23 +20,23 @@ ChoiceyApp = {
 			],
 			[
 				{ image: 'images/panda.jpg', headline: 'The newest little addition to the The Smithsonian National Zoo', link: 'article/newest-addition-to-national-zoo.html' },
-				{ image: '', headline: 'headline', link: 'article/bus-safety-focus.html' }
+				{ image: 'images/bus.jpg', headline: 'The crackdown on unsafe commercial bus companies', link: 'article/bus-safety-focus.html' }
 			],
 			[
 				{ image: 'images/mars.jpg', headline: 'These people who want to go on a one-way trip to Mars', link: 'article/these-people-want-to-go-to-mars.html' },
 				{ image: 'images/volcano.jpg', headline: 'A volcano at the bottom of the Pacific Ocean the size of New Mexico', link: 'article/volcano-discovered-in-pacific.html' }
 			],
 			[
-				{ image: '', headline: 'headline', link: 'article/scientists-strike-water-kenyas-parched-north.html' },
+				{ image: 'images/water.jpg', headline: 'The huge supply of underground water they found in drought-stricken Kenya', link: 'article/scientists-strike-water-kenyas-parched-north.html' },
 				{ image: 'images/internet.jpg', headline: 'The discovery that the NSA has ability to bypass a variety of digital encryption tools', link: 'article/after-nsa-can-we-trust.html' }
 			],
 			[
-				{ image: '', headline: 'headline', link: 'article/catalans-form-human-chain-spain-separation-bid.html' },
+				{ image: 'images/chain.jpg', headline: 'This group of Catalans that formed a 250-mile human chain across the northeastern region of Spain', link: 'article/catalans-form-human-chain-spain-separation-bid.html' },
 				{ image: 'images/armadillo.jpg', headline: 'The South Korean car that folds up when you park it', link: 'article/experimental-armadillo-car-folds-easy-parking.html' }
 			],
 			[
 				{ image: 'images/memory.jpg', headline: 'Why you should really be taking a nap right now', link: 'article/memory-pinball-and-other-reasons.html' },
-				{ image: '', headline: 'headline', link: 'article/cruise-ship-fast-food.html' }
+				{ image: 'images/food.jpg', headline: 'Fast Foods on the High Seas', link: 'article/cruise-ship-fast-food.html' }
 			]
 		],
 		oString: '<a href="{1}"><img class="thumb" src="{0}"></a><h2><a href="{1}">{2}</a></h2>',
