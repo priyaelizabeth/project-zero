@@ -45,6 +45,7 @@ ChoiceyApp = {
 		maxGreetings:0,
 		gCounter: 0,
 		finished: {
+			img: "images/check.png",
 			greeting: "Hope you enjoyed these quick reads. Check back again later for more.",
 			timestamp: "Last updated 10 minutes ago",
 			homeBtn: $('<a class="button medium expand" id="home-btn" href="index.html">Return to Today’s Headlines</a>'),
@@ -79,6 +80,7 @@ ChoiceyApp = {
 	refreshGreeting: function(msg){
 		if(msg){
 			s.greetingEl.text(msg).addClass('no-more');
+			$('<img src="'+ s.finished.img + '" alt="Check mark" class="no-more-check">').insertBefore(s.greetingEl);
 		} else {
 			s.greetingEl.text(s.greetings[s.gCounter]);
 			s.gCounter < s.maxGreetings-1 ? s.gCounter++ : s.gCounter = 0;
