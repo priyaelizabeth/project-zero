@@ -505,15 +505,17 @@ article {
 // CHOICEY SCREEN
 
 .greeting {
+	font-size: emCalc(18);
 	margin-bottom: 1em;
+	color: #a0bfd6;
 }
 
 .no-more{
-	font-size: emCalc(32);
+	font-size: emCalc(26);
 	color: #ced1d4;
 	margin-top: 1em;
-	margin-bottom: 1em;
-	line-height: 1.2em;
+	margin-bottom: 3em;
+	line-height: 1.15em;
 	font-weight: normal;
 }
 
@@ -521,7 +523,6 @@ article {
 	width: 84px;
 	height: 84px;
 	margin-top: 1em;
-	margin-bottom: .5em;
 }
 
 .option-1 {
@@ -545,7 +546,7 @@ article {
 		position: relative;
 		top: -0.6em;
 		padding: 7px 9px 8px 9px;
-		background: #a0a5ac;
+		background: #a0bfd6;
 		border-radius: 100px;
 	}
 }
