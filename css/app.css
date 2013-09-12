@@ -5417,7 +5417,9 @@ article h1 {
     font-style: normal; }
 
 .greeting {
-  margin-bottom: 1em; }
+  font-size: 1.125em;
+  margin-bottom: 1em;
+  color: #a0bfd6; }
 
 .no-more {
   font-size: 1.625em;
@@ -5451,7 +5453,7 @@ article h1 {
     position: relative;
     top: -0.6em;
     padding: 7px 9px 8px 9px;
-    background: #a0a5ac;
+    background: #a0bfd6;
     border-radius: 100px; }
 
 .choicey-options .row,
