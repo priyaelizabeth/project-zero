@@ -237,12 +237,8 @@ ul {
 			margin-left: 5px;
 		}
 	}
-	.footer-sections-button i {
-		background: url($icon-sprite) no-repeat 0 -89px #fff;
-	}
 	.footer-back-to-top-button {
-		float: right;
-		i { background: url($icon-sprite) no-repeat -154px -111px #fff; }
+		text-align: center;
 	}
 	.user-identity {
 		@include thin-border(right);
@@ -515,13 +511,13 @@ article {
 .no-more{
 	font-size: emCalc(32);
 	color: #ced1d4;
-	margin-top: 1.6em;
-	margin-bottom: 2.75em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 	line-height: 1.2em;
 	font-weight: normal;
 }
 
-.no-more-check{
+.no-more-check {
 	width: 84px;
 	height: 84px;
 	margin-top: 1em;

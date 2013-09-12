@@ -5176,12 +5176,8 @@ ul.disc li {
     .mobile-footer .button span {
       vertical-align: 1px;
       margin-left: 5px; }
-  .mobile-footer .footer-sections-button i {
-    background: url("../images/sprite-spectrum-1x.png") no-repeat 0 -89px white; }
   .mobile-footer .footer-back-to-top-button {
-    float: right; }
-    .mobile-footer .footer-back-to-top-button i {
-      background: url("../images/sprite-spectrum-1x.png") no-repeat -154px -111px white; }
+    text-align: center; }
   .mobile-footer .user-identity {
     border-right: 1px solid #eeeeee;
     text-align: right; }
@@ -5422,8 +5418,8 @@ article h1 {
 .no-more {
   font-size: 2em;
   color: #ced1d4;
-  margin-top: 1.6em;
-  margin-bottom: 2.75em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   line-height: 1.2em;
   font-weight: normal; }
 

@@ -2,6 +2,7 @@ var s,
 ChoiceyApp = {
 
 	settings: {
+		choiceyPrompt: $(".quickreads-prompt"),
 		backBtn: $("#back"),
 		refreshBtn: $("#refresh-choices"),
 		resetBtn: $('.nav-sections-button a'),
@@ -31,7 +32,7 @@ ChoiceyApp = {
 				{ image: 'images/internet.jpg', headline: 'The discovery that the NSA has ability to bypass a variety of digital encryption tools', link: 'article/after-nsa-can-we-trust.html' }
 			],
 			[
-				{ image: 'images/chain.jpg', headline: 'This group of Catalans that formed a 250-mile human chain across the northeastern region of Spain', link: 'article/catalans-form-human-chain-spain-separation-bid.html' },
+				{ image: 'images/chain.jpg', headline: 'This group of Catalans that formed a 250-mile human chain', link: 'article/catalans-form-human-chain-spain-separation-bid.html' },
 				{ image: 'images/armadillo.jpg', headline: 'The South Korean car that folds up when you park it', link: 'article/experimental-armadillo-car-folds-easy-parking.html' }
 			],
 			[
@@ -39,7 +40,7 @@ ChoiceyApp = {
 				{ image: 'images/food.jpg', headline: 'Fast Foods on the High Seas', link: 'article/cruise-ship-fast-food.html' }
 			]
 		],
-		oString: '<a href="{1}"><img class="thumb" src="{0}"></a><h2><a href="{1}">{2}</a></h2>',
+		oString: '<a href="{1}"><img class="thumb" src="{0}"><h2>{2}</a></h2>',
 		oCounter: parseInt(localStorage.getItem('option-counter'),10) || 0,
 		maxOptions:0,
 		maxGreetings:0,
@@ -56,6 +57,8 @@ ChoiceyApp = {
 		s = this.settings;
 		s.maxOptions = s.pool.length;
 		s.maxGreetings = s.greetings.length;
+		this.toggleChoicey();
+		this.shuffle(s.pool);
 		this.bindUIActions();
 	},
 
@@ -70,11 +73,16 @@ ChoiceyApp = {
 		s.resetBtn.on("click", function() {
 			localStorage.removeItem('option-counter');
 		});
-		ChoiceyApp.shuffle(s.pool);
 	},
 
 	goBack: function(){
 		window.history.back();
+	},
+	
+	toggleChoicey: function(){
+		if(s.oCounter >= s.maxOptions-1){
+			s.choiceyPrompt.fadeOut(150);
+		}
 	},
 	
 	refreshGreeting: function(msg){
