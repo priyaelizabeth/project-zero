@@ -5018,9 +5018,7 @@ a.th {
     max-width: 800px; }
 
 /* MIXINS */
-body {
-  font-family: Arial, Helvetica, sans-serif; }
-
+body,
 h1,
 h2,
 h3,
@@ -5057,6 +5055,9 @@ ul.disc li {
   background: url(http://graphics8.nytimes.com/images/misc/bullet4x4.gif) no-repeat left 0.45em;
   padding: 0 0 0 8px; }
 
+body {
+  color: #333333; }
+
 .clearfix {
   *zoom: 1; }
   .clearfix:before, .clearfix:after {
@@ -5080,7 +5081,7 @@ ul.disc li {
 .button {
   border-color: #eeeeee;
   background: #f7f7f7;
-  color: #a0a5ac;
+  color: #333333;
   font-size: 0.6875em;
   margin-bottom: 5px; }
   .button.tiny {
@@ -5144,7 +5145,7 @@ ul.disc li {
       padding-right: 5px;
       border-right: 1px solid #eeeeee; }
     .mobile-nav .member-tools a {
-      color: #a0a5ac; }
+      color: #333333; }
   .mobile-nav .masthead-row .button {
     padding: 6px 5px;
     width: 40px;
@@ -5173,7 +5174,7 @@ ul.disc li {
   .mobile-footer a:visited {
     font-size: 0.75em;
     font-weight: bold;
-    color: #a0a5ac; }
+    color: #333333; }
   .mobile-footer .button {
     border: none;
     background: none;
@@ -5244,7 +5245,7 @@ h3 {
   h2 a:hover,
   h3 a,
   h3 a:hover {
-    color: #606974; }
+    color: #326891; }
 
 .top-news .row:last-child,
 .subsection .row:last-child {
@@ -5297,7 +5298,7 @@ ul.headlines li h3 {
   padding: .5em;
   border-bottom: 1px solid #eeeeee; }
 .subsection-related .subsection-related-list a {
-  color: #a0a5ac;
+  color: #333333;
   font-size: 1em; }
 
 figure.lede-image {
@@ -5330,6 +5331,7 @@ article h1 {
 
 .share-tools-list .button,
 .share-tools-list-bottom .button {
+  color: #326891;
   border: none;
   background: none;
   padding: 0; }
@@ -5339,13 +5341,13 @@ article h1 {
   height: 17px; }
 .share-tools-list .share-button i,
 .share-tools-list-bottom .share-button i {
-  background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat 0 -92px; }
+  background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -42px -93px; }
 .share-tools-list .save-button i,
 .share-tools-list-bottom .save-button i {
-  background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -23px -91px; }
+  background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -130px -93px; }
 .share-tools-list .comments-button i,
 .share-tools-list-bottom .comments-button i {
-  background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -48px -91px; }
+  background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -89px -93px; }
 
 .share-tools-list {
   float: right;

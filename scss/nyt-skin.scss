@@ -13,6 +13,8 @@ $shadow-color: #ddd;
 $button-bg: #f7f7f7;
 $button2-bg: #a0bfd6;
 $icon-sprite: 'http://mobile.nytimes.com/images/sprite-1x.png';
+$primary-color: #333;
+$link-color: #326891;
 
 /* MIXINS */
 @mixin medium-border($side, $color:$border-color-dk) {
@@ -47,10 +49,7 @@ $icon-sprite: 'http://mobile.nytimes.com/images/sprite-1x.png';
 // GENERAL NYT STYLES
 
 // Typography
-body {
-	font-family: $arial;
-}
-
+body,
 h1,
 h2,
 h3,
@@ -94,6 +93,11 @@ ul {
 }
 
 // Other
+
+body {
+	color: $primary-color;
+}
+
 .clearfix {
 	@include clearfix;
 }
@@ -421,6 +425,7 @@ article {
 .share-tools-list,
 .share-tools-list-bottom {
 	.button {
+		color: $link-color;
 		@include image-button;
 	}
 	.button .icon {
@@ -428,13 +433,13 @@ article {
 		height: 17px;
 	}
 	.share-button i {
-		background: url($icon-sprite) no-repeat 0 -92px;
+		background: url($icon-sprite) no-repeat -42px -93px;
 	}
 	.save-button i {
-		background: url($icon-sprite) no-repeat -23px -91px;
+		background: url($icon-sprite) no-repeat -130px -93px;
 	}
 	.comments-button i {
-		background: url($icon-sprite) no-repeat -48px -91px;
+		background: url($icon-sprite) no-repeat -89px -93px;
 	}
 }
 
