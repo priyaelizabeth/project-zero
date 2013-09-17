@@ -1,0 +1,11 @@
+/* NYT Skin for project zero */
+
+// typography
+$chelt: nyt-cheltenham, Georgia, Times, "Times New Roman", serif;
+$franklin: nyt-franklin, Arial, Helvetica, sans-serif;
+
+h1,
+h2,
+h3 {
+	font-family: $chelt;
+}
