@@ -5154,9 +5154,8 @@ ul.disc li {
       height: 16px; }
     .mobile-nav .masthead-row .button span {
       display: none; }
-  .mobile-nav .nav-search-button {
-    float: right; }
   .mobile-nav .nav-sections-button {
+    float: right;
     margin-left: .5em; }
     .mobile-nav .nav-sections-button i {
       background: url("http://mobile.nytimes.com/images/sprite-1x.png") 0 -90px no-repeat; }
