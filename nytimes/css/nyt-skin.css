@@ -5037,7 +5037,8 @@ article .dateline,
 .up-next .return-home a,
 .subsection-related-list a,
 .button,
-.logo {
+.logo,
+.logo-small .sub-head {
   font-family: Arial, Helvetica, sans-serif; }
 
 .subsection-header {
@@ -5046,9 +5047,11 @@ article .dateline,
 
 .kicker {
   text-transform: uppercase;
+  font-weight: normal;
   color: #cccccc;
   font-size: 0.625em;
-  line-height: 1.167; }
+  line-height: normal;
+  margin-bottom: 15px; }
 
 ul li {
   list-style-type: none; }
@@ -5117,14 +5120,27 @@ ul.disc li {
   .mobile-nav .logo {
     height: 47px; }
     .mobile-nav .logo a {
-      background: url("http://mobile.nytimes.com/images/sprite-1x.png") 0 -193px;
+      background: url("../images/sprite-1x.png") 0 -193px;
       width: 184px;
       height: 47px;
       text-indent: -9999px;
       display: block;
       margin: auto; }
-  .mobile-nav .logo-mini .kicker {
-    display: block; }
+  .mobile-nav .logo-small {
+    height: 47px; }
+    .mobile-nav .logo-small a {
+      background: url("../images/sprite-1x.png") 0 -129px;
+      background-size: 100%;
+      width: 124px;
+      height: 20px;
+      text-indent: -9999px;
+      display: block;
+      margin: auto; }
+    .mobile-nav .logo-small .sub-head {
+      text-align: center;
+      color: #606974;
+      font-size: 12px;
+      margin-top: 3px; }
   .mobile-nav .member-tools,
   .mobile-nav .mobile-meta {
     margin-bottom: 5px; }
@@ -5156,12 +5172,14 @@ ul.disc li {
     .mobile-nav .masthead-row .button span {
       display: none; }
   .mobile-nav .nav-sections-button {
-    float: right;
+    float: left;
     margin-left: .5em; }
     .mobile-nav .nav-sections-button i {
-      background: url("http://mobile.nytimes.com/images/sprite-1x.png") 0 -90px no-repeat; }
-  .mobile-nav .nav-search-button i {
-    background: url("http://mobile.nytimes.com/images/sprite-1x.png") -21px -93px no-repeat; }
+      background: url("../images/sprite-1x.png") 0 -90px no-repeat; }
+  .mobile-nav .nav-search-button {
+    float: right; }
+    .mobile-nav .nav-search-button i {
+      background: url("../images/sprite-1x.png") -21px -93px no-repeat; }
   .mobile-nav .nav-back-button .button {
     width: 60px;
     padding-top: 9px; }
@@ -5186,11 +5204,11 @@ ul.disc li {
       vertical-align: 1px;
       margin-left: 5px; }
   .mobile-footer .footer-sections-button i {
-    background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat 0 -89px white; }
+    background: url("../images/sprite-1x.png") no-repeat 0 -89px white; }
   .mobile-footer .footer-back-to-top-button {
     float: right; }
     .mobile-footer .footer-back-to-top-button i {
-      background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -154px -111px white; }
+      background: url("../images/sprite-1x.png") no-repeat -154px -111px white; }
   .mobile-footer .user-identity {
     border-right: 1px solid #eeeeee;
     text-align: right; }
@@ -5216,7 +5234,7 @@ ul.disc li {
   .mobile-footer .download-app i {
     width: 22px;
     height: 22px;
-    background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -97px -168px;
+    background: url("../images/sprite-1x.png") no-repeat -97px -168px;
     display: inline-block; }
   .mobile-footer .download-app span {
     vertical-align: 5px; }
@@ -5343,13 +5361,13 @@ article h1 {
   height: 17px; }
 .share-tools-list .share-button i,
 .share-tools-list-bottom .share-button i {
-  background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -42px -93px; }
+  background: url("../images/sprite-1x.png") no-repeat -42px -93px; }
 .share-tools-list .save-button i,
 .share-tools-list-bottom .save-button i {
-  background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -130px -93px; }
+  background: url("../images/sprite-1x.png") no-repeat -130px -93px; }
 .share-tools-list .comments-button i,
 .share-tools-list-bottom .comments-button i {
-  background: url("http://mobile.nytimes.com/images/sprite-1x.png") no-repeat -89px -93px; }
+  background: url("../images/sprite-1x.png") no-repeat -89px -93px; }
 
 .share-tools-list {
   float: right;
@@ -5408,27 +5426,56 @@ article h1 {
     font-weight: bold;
     font-style: normal; }
 
+.greeting {
+  font-size: 1.125em;
+  margin-bottom: 1em;
+  color: #326891; }
+
+.no-more {
+  font-size: 1.625em;
+  color: #ced1d4;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  line-height: 1.15em;
+  font-weight: normal; }
+
+.no-more-check {
+  width: 84px;
+  height: 84px;
+  margin-top: 1em; }
+
 .option-1 {
   margin: 2em 0; }
+
+.option-2 .thumb {
+  float: left;
+  margin: 0 0.625em 0.625em 0; }
 
 .option-divider {
   height: 1px;
   background-color: #eeeeee;
   text-align: center;
   margin-bottom: 1.5em;
-  font-style: italic;
+  font-style: nomral;
   border-top: 1px solid #eeeeee; }
   .option-divider span {
-    background-color: #fff;
+    color: #fff;
     position: relative;
     top: -0.6em;
-    padding: 0 10px; }
+    padding: 7px 9px 8px 9px;
+    background: #326891;
+    border-radius: 100px; }
 
 .choicey-options .row,
 .choicey-options .story {
   border: none; }
 .choicey-options .story h2 {
+  font-size: 1.0625em;
+  line-height: 1.05em;
   font-weight: normal; }
+.choicey-options .thumb {
+  width: 130px;
+  height: 90px; }
 
 .choicey-callback-panel {
   z-index: 100;
@@ -5439,3 +5486,6 @@ article h1 {
   text-align: center;
   width: 100%;
   background: rgba(255, 255, 255, 0.9); }
+
+.refresh {
+  font-size: 1.125em; }

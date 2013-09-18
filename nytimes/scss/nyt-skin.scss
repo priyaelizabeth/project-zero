@@ -12,7 +12,7 @@ $border-color-dk: #000;
 $shadow-color: #ddd;
 $button-bg: #f7f7f7;
 $button2-bg: #a0bfd6;
-$icon-sprite: 'http://mobile.nytimes.com/images/sprite-1x.png';
+$icon-sprite: '../images/sprite-1x.png';
 
 /* MIXINS */
 @mixin medium-border($side, $color:$border-color-dk) {
@@ -29,9 +29,11 @@ $icon-sprite: 'http://mobile.nytimes.com/images/sprite-1x.png';
 
 @mixin subhead-kicker($size) {
 	text-transform: uppercase;
+	font-weight: normal;
 	color: $secondary-color;
 	font-size: emCalc($size);
-	line-height: 1.167;
+	line-height: normal;
+	margin-bottom: 15px;
 }
 
 @mixin image-button {
@@ -67,7 +69,8 @@ article .dateline,
 .up-next .return-home a,
 .subsection-related-list a,
 .button,
-.logo {
+.logo,
+.logo-small .sub-head {
 	font-family: $arial;
 }
 
@@ -157,9 +160,23 @@ ul {
 			margin: auto;
 		}
 	}
-	
-	.logo-mini .kicker {
-		display: block;
+	.logo-small {
+		height: 47px;
+		a {
+			background: url($icon-sprite) 0 -129px;
+			background-size: 100%;
+			width: 124px;
+			height: 20px;
+			text-indent: -9999px;
+			display: block;
+			margin: auto;
+		}
+		.sub-head {
+			text-align: center;
+			color: $link-color;
+			font-size: 12px;
+			margin-top: 3px;
+		}
 	}
 	.member-tools,
 	.mobile-meta {
@@ -203,14 +220,17 @@ ul {
 		}
 	}
 	.nav-sections-button {
-		float: right;
+		float: left;
 		margin-left: .5em;
 	 	i {
 			background: url($icon-sprite) 0 -90px no-repeat;
 		}
 	}
-	.nav-search-button i {
-		background: url($icon-sprite) -21px -93px no-repeat;
+	.nav-search-button {
+		float: right;
+		i {
+			background: url($icon-sprite) -21px -93px no-repeat;
+		}
 	}
 	.nav-back-button .button {
 		width: 60px;
@@ -485,21 +505,50 @@ article {
 
 // CHOICEY SCREEN
 
+.greeting {
+	font-size: emCalc(18);
+	margin-bottom: 1em;
+	color: $primary-color;
+}
+
+.no-more{
+	font-size: emCalc(26);
+	color: #ced1d4;
+	margin-top: 1em;
+	margin-bottom: 3em;
+	line-height: 1.15em;
+	font-weight: normal;
+}
+
+.no-more-check {
+	width: 84px;
+	height: 84px;
+	margin-top: 1em;
+}
+
 .option-1 {
 	margin: 2em 0;
 }
+
+.option-2 .thumb {
+	float: left;
+	margin: 0 emCalc(10) emCalc(10) 0;
+}
+
 .option-divider {
 	height: 1px;
 	background-color: $border-color;
 	text-align: center;
 	margin-bottom: 1.5em;
-	font-style: italic;
+	font-style: nomral;
 	@include thin-border(top);
 	span {
-		background-color: #fff;
+		color: #fff;
 		position: relative;
 		top: -0.6em;
-		padding: 0 10px;
+		padding: 7px 9px 8px 9px;
+		background: $primary-color;
+		border-radius: 100px;
 	}
 }
 
@@ -509,7 +558,13 @@ article {
 		border: none;
 	}
 	.story h2 {
+		font-size: emCalc(17);
+		line-height: 1.05em;
 		font-weight: normal;
+	}
+	.thumb {
+		width: 130px;
+		height: 90px;
 	}
 }
 
@@ -522,4 +577,8 @@ article {
 	text-align: center;
 	width: 100%;
 	@include semi-trans-panel;
+}
+
+.refresh {
+	font-size: emCalc(18);
 }
