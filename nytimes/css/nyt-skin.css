@@ -5338,10 +5338,12 @@ ul.headlines li a {
   background: url("../../spectrum/images/sprite-spectrum-1x.png") no-repeat 0 -116px; }
 
 .quickreads-button a,
-#refresh-choices {
+#refresh-choices,
+#home-btn {
   color: #fff; }
   .quickreads-button a:hover,
-  #refresh-choices:hover {
+  #refresh-choices:hover,
+  #home-btn:hover {
     color: #fff; }
 
 figure.lede-image {
