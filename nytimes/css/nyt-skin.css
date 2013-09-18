@@ -5038,7 +5038,8 @@ article .dateline,
 .subsection-related-list a,
 .button,
 .logo,
-.logo-small .sub-head {
+.logo-small .sub-head,
+.greeting {
   font-family: Arial, Helvetica, sans-serif; }
 
 .subsection-header {
@@ -5090,7 +5091,12 @@ ul.disc li {
   .button.small {
     font-size: 0.75em; }
   .button.medium {
-    font-size: 1em; }
+    font-size: 0.875em;
+    font-weight: normal;
+    -webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.25);
+    box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.25);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.18, #606974), color-stop(0.8, #6f7985)); }
   .button i {
     display: inline-block;
     text-indent: -9999px; }
@@ -5172,12 +5178,12 @@ ul.disc li {
     .mobile-nav .masthead-row .button span {
       display: none; }
   .mobile-nav .nav-sections-button {
-    float: left;
+    float: right;
     margin-left: .5em; }
     .mobile-nav .nav-sections-button i {
       background: url("../images/sprite-1x.png") 0 -90px no-repeat; }
   .mobile-nav .nav-search-button {
-    float: right; }
+    float: left; }
     .mobile-nav .nav-search-button i {
       background: url("../images/sprite-1x.png") -21px -93px no-repeat; }
   .mobile-nav .nav-back-button .button {
@@ -5320,6 +5326,23 @@ ul.headlines li a {
 .subsection-related .subsection-related-list a {
   color: #326891;
   font-size: 1em; }
+
+.quickreads-button a {
+  vertical-align: top;
+  line-height: 18px; }
+  .quickreads-button a span {
+    vertical-align: 2px; }
+.quickreads-button i {
+  width: 16px;
+  height: 16px;
+  background: url("../../spectrum/images/sprite-spectrum-1x.png") no-repeat 0 -116px; }
+
+.quickreads-button a,
+#refresh-choices {
+  color: #fff; }
+  .quickreads-button a:hover,
+  #refresh-choices:hover {
+    color: #fff; }
 
 figure.lede-image {
   margin-bottom: 1em; }
