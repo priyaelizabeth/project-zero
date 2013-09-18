@@ -1,0 +1,529 @@
+/* NYT Skin */
+
+// Foundation Settings
+@import "foundation/_variables.scss";
+@import "normalize";
+@import "foundation.scss";
+
+$arial: Arial, Helvetica, sans-serif;
+$georgia: Georgia, 'Times New Roman', serif;
+$border-color: #eee;
+$border-color-dk: #000;
+$shadow-color: #ddd;
+$button-bg: #f7f7f7;
+$button2-bg: #a0bfd6;
+$icon-sprite: 'http://mobile.nytimes.com/images/sprite-1x.png';
+$primary-color: #333;
+$link-color: #326891;
+
+/* MIXINS */
+@mixin medium-border($side, $color:$border-color-dk) {
+  border-#{$side}: 2px solid $color;
+}
+
+@mixin thin-border($side, $color:$border-color) {
+  border-#{$side}: 1px solid $color;
+}
+
+@mixin shadow($side) {
+	box-shadow: 1px 2px 2px $shadow-color;
+}
+
+@mixin subhead-kicker($size) {
+	text-transform: uppercase;
+	color: $secondary-color;
+	font-size: emCalc($size);
+	line-height: 1.167;
+}
+
+@mixin image-button {
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+@mixin semi-trans-panel {
+	background: rgba(255,255,255,.9);
+}
+
+// GENERAL NYT STYLES
+
+// Typography
+body,
+h1,
+h2,
+h3,
+h4 {	
+	font-family: $georgia;
+}
+
+.kicker,
+.subsection-header,
+.mobile-footer,
+.mobile-nav .member-tools li,
+article .byline,
+article .dateline,
+.lede-image figcaption,
+.share-tools-list-bottom,
+.up-next .return-home a,
+.subsection-related-list a,
+.button,
+.logo {
+	font-family: $arial;
+}
+
+.subsection-header {
+	font-weight: bold;
+	font-size: emCalc(14);
+}
+
+.kicker {
+	@include subhead-kicker(10);
+}
+
+ul {
+	li {
+		list-style-type: none;
+	}
+
+	&.disc li {
+		background: url(http://graphics8.nytimes.com/images/misc/bullet4x4.gif) no-repeat left .45em;
+		padding: 0 0 0 8px;
+	}
+}
+
+// Other
+
+body {
+	color: $primary-color;
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.timestamp {
+	color: $alert-color;
+	font-weight: normal;
+	font-size: emCalc(12);
+	text-transform: uppercase;
+}
+.button {
+	border-color: $border-color;
+	background: $button-bg;
+	color: $primary-color;
+	font-size: emCalc(11);
+	margin-bottom: 5px;
+	&.tiny { font-size: emCalc(11); }
+	&.small { font-size: emCalc(12); }
+	&.medium { font-size: 1em; }
+	i {
+		display: inline-block;
+		text-indent: -9999px;
+	}
+	&:active{
+		box-shadow: none;
+		background: none;
+	}
+	&:hover { background-color: $button-bg; }
+	&:focus { background-color: $button-bg; }
+}
+
+.row {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	@include thin-border(bottom);
+}
+
+// Header & footer
+.mobile-nav {
+	margin: 5px 0;
+	.masthead-row {
+		padding: 2px;
+		.masthead-buttons-right { padding-right: 2px; }
+		.masthead-buttons-left { padding-left: 2px; }
+	}
+	.logo {
+		height: 47px;
+		a {
+			background: url($icon-sprite) 0 -193px;
+			width: 184px;
+			height: 47px;
+			text-indent: -9999px;
+			display: block;
+			margin: auto;
+		}
+	}
+	
+	.logo-mini .kicker {
+		display: block;
+	}
+	.member-tools,
+	.mobile-meta {
+		margin-bottom: 5px;
+		 li {
+			font-weight: normal;
+			font-size: emCalc(11);
+			display: inline;
+		}
+	}
+	.mobile-meta {
+		.last-updated {
+			color: $secondary-color;
+			span {
+				color: $alert-color;
+				display: inline;
+			}
+		}
+	}
+	.member-tools {
+		text-transform: uppercase;
+		li:first-child {
+			margin-right: 5px;
+			padding-right: 5px;
+			@include thin-border(right);
+		}
+		a {
+			color: $primary-color;
+		}
+	}
+	.masthead-row .button {
+		padding: 6px 5px;
+		width: 40px;
+		height: 32px;
+		.icon {
+			width: 16px;
+			height: 16px;
+		}
+		span {
+			display: none;
+		}
+	}
+	.nav-sections-button {
+		float: right;
+		margin-left: .5em;
+	 	i {
+			background: url($icon-sprite) 0 -90px no-repeat;
+		}
+	}
+	.nav-search-button i {
+		background: url($icon-sprite) -21px -93px no-repeat;
+	}
+	.nav-back-button .button {
+		width: 60px;
+		padding-top: 9px;
+	}
+}
+
+.mobile-footer {
+	margin-top: 1em;
+	a,
+	a:hover,
+	a:active,
+	a:visited {
+		font-size: emCalc(12);
+		font-weight: bold;
+		color: $primary-color;
+	}
+	.button {
+		@include image-button;
+		.icon {
+			width: 14px;
+			height: 14px;
+		}
+		span {
+			vertical-align: 1px;
+			margin-left: 5px;
+		}
+	}
+	.footer-sections-button i {
+		background: url($icon-sprite) no-repeat 0 -89px #fff;
+	}
+	.footer-back-to-top-button {
+		float: right;
+		i { background: url($icon-sprite) no-repeat -154px -111px #fff; }
+	}
+	.user-identity {
+		@include thin-border(right);
+		text-align: right;
+	}
+	.service-links {
+		text-align: center;
+		border: none;
+	}
+	.member-tools-bottom {
+		margin-bottom: 1em;
+	}
+	.font-size {
+		.label,
+		.sm,
+		.med,
+		.lg {
+			font-weight: normal;
+		}
+		.label {
+			background: none;
+			color: $secondary-color;
+		}
+		.sm { font-size: emCalc(14); }
+		.med { font-size: emCalc(21); }
+		.lg { font-size: emCalc(28); }
+	}
+	.download-app {
+		i {
+			width: 22px;
+			height: 22px;
+			background: url($icon-sprite) no-repeat -97px -168px;
+			display: inline-block;
+		}
+		span {
+			vertical-align: 5px;
+		}
+	}
+	.help-links {
+		text-align: center;
+		ul { margin-bottom: 0; }
+		li { display: inline; }
+		li a {
+			font-weight: normal;
+			margin-right: 1em;
+		}
+	}
+	.copyright span {
+		font-size: emCalc(11);
+	}
+}
+
+.banner-ad  {
+	text-align: center;
+}
+
+// HOMEPAGE & SECTIONFRONT STYLES
+
+h1,
+h2,
+h3 {
+	font-size: emCalc(16);
+	a,
+	a:hover {
+		color: $link-color;
+	}
+}
+
+.top-news,
+.subsection {
+	.row:last-child {
+		border: none;
+	}
+}
+
+.story {
+	@include clearfix;
+	&:not(:last-child) {
+		margin-bottom: .5em;
+	}
+	padding-bottom: .5em;
+	@include thin-border(bottom, $border-color);
+	.summary {
+		font-size: emCalc(13);
+		line-height: 1.5;
+		color: $summary-color;
+	}
+	.thumb {
+		float: right;
+		margin: 0 0 emCalc(10) emCalc(10);
+	}
+	.thumb.float-left {
+		float: left;
+		margin: 0 emCalc(10) emCalc(10) 0;
+	}
+}
+
+.homepage .story:first-child {
+	@include thin-border(bottom, $border-color-dk);
+}
+
+.homepage .story:last-child {
+	border-bottom: none;
+}
+
+ul.headlines {
+	li {
+		&:not(:last-child) { @include thin-border(bottom); }
+		h3 {
+			padding: 10px 0;
+			font-weight: normal;
+		}
+	}
+}
+
+.subsection .subsection-header {
+	margin: 8px 0 1px;
+	padding: 9px 15px;
+	background: $panel-bg;
+	@include thin-border(top);
+	@include thin-border(bottom);
+	a {
+		color: $body-font-color;
+	}
+}
+
+.subsection-related .subsection-related-list {
+	li {
+		padding: .5em;
+		@include thin-border(bottom);
+	}
+	a {
+		color: $primary-color;
+		font-size: 1em;
+	}
+}
+
+// ARTICLE
+
+figure.lede-image {
+	margin-bottom: 1em;
+}
+
+article {
+	h1 {
+		font-size: emCalc(22);
+		line-height: 1.1;
+		font-weight: normal;
+		margin-bottom: .5em;
+	}
+}
+
+.byline, 
+.dateline {
+	font-size: emCalc(11);
+	line-height: 1.1;
+	display: block;
+	span {
+		text-transform: uppercase;
+	}
+}
+.dateline { margin-bottom: .5em; }
+
+.lede-image figcaption {
+	margin-top: .5em;
+	font-size: emCalc(11);
+	color: #666;
+	span {
+		font-weight: bold;
+	}
+}
+
+.share-tools-list,
+.share-tools-list-bottom {
+	.button {
+		color: $link-color;
+		@include image-button;
+	}
+	.button .icon {
+		width: 20px;
+		height: 17px;
+	}
+	.share-button i {
+		background: url($icon-sprite) no-repeat -42px -93px;
+	}
+	.save-button i {
+		background: url($icon-sprite) no-repeat -130px -93px;
+	}
+	.comments-button i {
+		background: url($icon-sprite) no-repeat -89px -93px;
+	}
+}
+
+.share-tools-list {
+	float: right;
+	@include inline-list;
+	li {
+		margin-left: .5em;
+	}
+	.button span {
+		display: none;
+	}
+}
+
+.share-tools-list-bottom {
+	float: left;
+	@include inline-list;
+	.button span {
+		text-transform: uppercase;
+		display: inline;
+		vertical-align: 4px;
+		margin: 0 10px 0 4px;
+	}
+}
+
+.up-next {
+	background: $panel-bg;
+	h5 {
+		font-weight: normal;
+		font-size: emCalc(14);
+	}
+	.up-next-previous {
+		@include thin-border(right);
+	}
+	.up-next-next {
+		text-align: right;
+	}
+}
+
+.return-home {
+	text-align: center;
+	em {
+		font-weight: bold;
+		font-style: normal;
+	}
+}
+
+// CHOICEY SCREEN
+
+.option-1 {
+	margin: 2em 0;
+}
+.option-divider {
+	height: 1px;
+	background-color: $border-color;
+	text-align: center;
+	margin-bottom: 1.5em;
+	font-style: italic;
+	@include thin-border(top);
+	span {
+		background-color: #fff;
+		position: relative;
+		top: -0.6em;
+		padding: 0 10px;
+	}
+}
+
+.choicey-options {
+	.row,
+	.story {
+		border: none;
+	}
+	.story h2 {
+		font-weight: normal;
+	}
+}
+
+.choicey-callback-panel {
+	z-index: 100;
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	padding: .5em;
+	text-align: center;
+	width: 100%;
+	@include semi-trans-panel;
+}

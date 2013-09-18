@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Quick Read</title>
+
+
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script type="text/javascript" src="http://typeface.nytimes.com/mrn6omn.js?version=0.0.4"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body>
+
+	<header class="mobile-nav show-for-small">
+		<div class="row masthead-row">
+			<div class="columns small-3 masthead-buttons-left">
+				<div class="nav-back-button">
+					<a href="javascript:void(0);" id="back" class="button">&laquo; Back</a>
+				</div>
+			</div>
+			<div class="columns small-6 logo-small">
+					<a href="index.html">Spectrum</a>
+					<div class="sub-head">QuickReads</div>
+			</div>
+
+			<div class="columns small-3 masthead-buttons-right">
+				<div class="nav-sections-button">
+					<a href="#" class="button"><i class="icon"></i><span>Sections</span></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<article class="choicey-options">
+		<div class="row">
+			<div class="columns small-12 text-center">
+				<h3 class="kicker" id="timestamp">Updated for you 5 min ago</h3>
+				<h3 class="greeting" id="greeting">OK, have you heard about:</h3>
+				<div class="story option-1" id="option-1">
+				</div>
+				<div class="option-divider" id="option-divider">
+				  <span>
+				    or
+				  </span>
+				</div>
+				<div class="story option-2" id="option-2">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns small-12">
+					<a class="button medium expand" id="refresh-choices">Show me something else <span class="refresh">&#160;&#8634</span></a>
+			</div>
+		</div>
+
+
+	</article>
+
+
+
+
+
+
+  	<script>
+	  document.write('<script src=' +
+	  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+	  '.js><\/script>')
+	  </script>
+	  <script src="js/foundation/foundation.js"></script>
+	  <script src="js/foundation/foundation.alerts.js"></script>
+	  <script src="js/foundation/foundation.clearing.js"></script>
+	  <script src="js/foundation/foundation.cookie.js"></script>
+	  <script src="js/foundation/foundation.dropdown.js"></script>
+	  <script src="js/foundation/foundation.forms.js"></script>
+	  <script src="js/foundation/foundation.joyride.js"></script>
+	  <script src="js/foundation/foundation.magellan.js"></script>
+	  <script src="js/foundation/foundation.orbit.js"></script>
+	  <script src="js/foundation/foundation.placeholder.js"></script>
+	  <script src="js/foundation/foundation.reveal.js"></script>
+	  <script src="js/foundation/foundation.section.js"></script>
+	  <script src="js/foundation/foundation.tooltips.js"></script>
+	  <script src="js/foundation/foundation.topbar.js"></script>
+	  <script src="js/foundation/foundation.interchange.js"></script>
+	  <script src="js/app/app.js"></script>
+	  <script>
+	    $(document).foundation();
+		$(document).ready(function(){
+			ChoiceyApp.refreshOptions();
+		})
+	  </script>
+</body>
+</html>
