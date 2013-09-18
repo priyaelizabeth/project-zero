@@ -13,8 +13,6 @@ $shadow-color: #ddd;
 $button-bg: #f7f7f7;
 $button2-bg: #a0bfd6;
 $icon-sprite: 'http://mobile.nytimes.com/images/sprite-1x.png';
-$primary-color: #333;
-$link-color: #326891;
 
 /* MIXINS */
 @mixin medium-border($side, $color:$border-color-dk) {
@@ -61,6 +59,7 @@ h4 {
 .subsection-header,
 .mobile-footer,
 .mobile-nav .member-tools li,
+.mobile-nav .mobile-meta li,
 article .byline,
 article .dateline,
 .lede-image figcaption,
@@ -93,10 +92,6 @@ ul {
 }
 
 // Other
-
-body {
-	color: $primary-color;
-}
 
 .clearfix {
 	@include clearfix;
@@ -133,8 +128,8 @@ body {
 		box-shadow: none;
 		background: none;
 	}
-	&:hover { background-color: $button-bg; }
-	&:focus { background-color: $button-bg; }
+	&:hover { background-color: $button-bg; color: $primary-color;}
+	&:focus { background-color: $button-bg; color: $primary-color;}
 }
 
 .row {
@@ -362,6 +357,7 @@ ul.headlines {
 			padding: 10px 0;
 			font-weight: normal;
 		}
+		a {	color: $body-font-color; }
 	}
 }
 

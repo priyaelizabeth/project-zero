@@ -353,7 +353,7 @@ body {
 
 body {
   background: white;
-  color: #606974;
+  color: #333333;
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -1380,11 +1380,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #a0a5ac;
+  color: #326891;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #9298a0; }
+    color: #2b5a7e; }
   a img {
     border: none; }
 
@@ -1510,7 +1510,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #606974;
+  color: #333333;
   border-bottom: 1px dotted #dddddd;
   cursor: help; }
 
@@ -1663,11 +1663,11 @@ button, .button {
   padding-bottom: 0.8125em;
   padding-left: 1.5em;
   font-size: 1em;
-  background-color: #a0a5ac;
-  border-color: #858b94;
+  background-color: #326891;
+  border-color: #254d6b;
   color: white; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #858b94; }
+    background-color: #254d6b; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -1723,19 +1723,19 @@ button, .button {
     text-align: right;
     padding-right: 0.75em; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #a0a5ac;
-    border-color: #858b94;
+    background-color: #326891;
+    border-color: #254d6b;
     color: white;
     cursor: default;
     opacity: 0.6;
     -webkit-box-shadow: none;
     box-shadow: none; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #858b94; }
+      background-color: #254d6b; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: white; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #a0a5ac; }
+      background-color: #326891; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #cccccc;
       border-color: #b3b3b3;
@@ -2319,7 +2319,7 @@ label.error {
     .split.button span:active {
       background-color: rgba(0, 0, 0, 0.1); }
   .split.button span {
-    border-left-color: #777e88; }
+    border-left-color: #1e3f58; }
   .split.button span {
     width: 3em; }
     .split.button span:before {
@@ -3263,10 +3263,10 @@ label.error {
     font-weight: bold;
     background: white; }
     .top-bar-section ul li > a.button {
-      background: #a0a5ac;
+      background: #326891;
       font-size: 0.6875em; }
       .top-bar-section ul li > a.button.hover {
-        background: #858b94; }
+        background: #254d6b; }
     .top-bar-section ul li > a.button.secondary {
       background: #cccccc; }
       .top-bar-section ul li > a.button.secondary.hover {
@@ -4078,8 +4078,8 @@ label.error {
   position: relative;
   padding: 0.6875em 1.3125em 0.75em 0.6875em;
   font-size: 0.875em;
-  background-color: #a0a5ac;
-  border-color: #858b94;
+  background-color: #326891;
+  border-color: #254d6b;
   color: white; }
   .alert-box .close {
     font-size: 1.375em;
@@ -4134,7 +4134,7 @@ label.error {
     .breadcrumbs > * a,
     .breadcrumbs > * span {
       text-transform: uppercase;
-      color: #a0a5ac; }
+      color: #326891; }
     .breadcrumbs > *.current {
       cursor: default;
       color: #333333; }
@@ -4386,7 +4386,7 @@ kbd {
   position: relative;
   padding: 0.1875em 0.625em 0.25em;
   font-size: 0.875em;
-  background-color: #a0a5ac;
+  background-color: #326891;
   color: white; }
   .label.radius {
     -webkit-border-radius: 3px;
@@ -4443,12 +4443,12 @@ ul.pagination {
     ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
       background: transparent; }
     ul.pagination li.current a {
-      background: #a0a5ac;
+      background: #326891;
       color: white;
       font-weight: bold;
       cursor: default; }
       ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-        background: #a0a5ac; }
+        background: #326891; }
   ul.pagination li {
     float: left;
     display: block; }
@@ -4482,10 +4482,10 @@ ul.pagination {
   .panel.callout {
     border-style: solid;
     border-width: 1px;
-    border-color: #858b94;
+    border-color: #254d6b;
     margin-bottom: 1.25em;
     padding: 1.25em;
-    background: #a0a5ac;
+    background: #326891;
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
     .panel.callout > :first-child {
@@ -4493,7 +4493,7 @@ ul.pagination {
     .panel.callout > :last-child {
       margin-bottom: 0; }
     .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p {
-      color: #333333; }
+      color: white; }
     .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
       line-height: 1;
       margin-bottom: 0.625em; }
@@ -4555,7 +4555,7 @@ ul.pagination {
   padding: 0.125em;
   margin-bottom: 0.625em; }
   .progress .meter {
-    background: #a0a5ac;
+    background: #326891;
     height: 100%;
     display: block; }
   .progress.secondary .meter {
@@ -4595,7 +4595,7 @@ ul.pagination {
     font-size: 0.875em; }
     .side-nav li a {
       display: block;
-      color: #a0a5ac; }
+      color: #326891; }
     .side-nav li.active > a:first-child {
       color: #4d4d4d;
       font-weight: bold; }
@@ -4632,7 +4632,7 @@ ul.pagination {
       -webkit-border-radius: 1000px;
       border-radius: 1000px;
       font-weight: bold;
-      background: #a0a5ac;
+      background: #326891;
       padding: 0.1875em 0.5625em;
       cursor: default;
       color: white; }
@@ -4849,8 +4849,8 @@ table {
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out; }
   .th:hover, .th:focus {
-    -webkit-box-shadow: 0 0 6px 1px rgba(160, 165, 172, 0.5);
-    box-shadow: 0 0 6px 1px rgba(160, 165, 172, 0.5); }
+    -webkit-box-shadow: 0 0 6px 1px rgba(50, 104, 145, 0.5);
+    box-shadow: 0 0 6px 1px rgba(50, 104, 145, 0.5); }
   .th.radius {
     -webkit-border-radius: 3px;
     border-radius: 3px; }
@@ -4865,8 +4865,8 @@ a.th {
   font-weight: bold;
   color: #333333; }
   .has-tip:hover, .has-tip:focus {
-    border-bottom: dotted 1px #6b727b;
-    color: #a0a5ac; }
+    border-bottom: dotted 1px #183245;
+    color: #326891; }
   .has-tip.tip-left, .has-tip.tip-right {
     float: none !important; }
 
@@ -4895,8 +4895,8 @@ a.th {
     border-color: transparent transparent black transparent;
     top: -10px; }
   .tooltip.opened {
-    color: #a0a5ac !important;
-    border-bottom: dotted 1px #6b727b !important; }
+    color: #326891 !important;
+    border-bottom: dotted 1px #183245 !important; }
 
 .tap-to-close {
   display: block;
@@ -5029,6 +5029,7 @@ h4 {
 .subsection-header,
 .mobile-footer,
 .mobile-nav .member-tools li,
+.mobile-nav .mobile-meta li,
 article .byline,
 article .dateline,
 .lede-image figcaption,
@@ -5055,9 +5056,6 @@ ul.disc li {
   background: url(http://graphics8.nytimes.com/images/misc/bullet4x4.gif) no-repeat left 0.45em;
   padding: 0 0 0 8px; }
 
-body {
-  color: #333333; }
-
 .clearfix {
   *zoom: 1; }
   .clearfix:before, .clearfix:after {
@@ -5081,7 +5079,7 @@ body {
 .button {
   border-color: #eeeeee;
   background: #f7f7f7;
-  color: #333333;
+  color: #326891;
   font-size: 0.6875em;
   margin-bottom: 5px; }
   .button.tiny {
@@ -5097,9 +5095,11 @@ body {
     box-shadow: none;
     background: none; }
   .button:hover {
-    background-color: #f7f7f7; }
+    background-color: #f7f7f7;
+    color: #326891; }
   .button:focus {
-    background-color: #f7f7f7; }
+    background-color: #f7f7f7;
+    color: #326891; }
 
 .row {
   padding-top: .5em;
@@ -5145,7 +5145,7 @@ body {
       padding-right: 5px;
       border-right: 1px solid #eeeeee; }
     .mobile-nav .member-tools a {
-      color: #333333; }
+      color: #326891; }
   .mobile-nav .masthead-row .button {
     padding: 6px 5px;
     width: 40px;
@@ -5174,7 +5174,7 @@ body {
   .mobile-footer a:visited {
     font-size: 0.75em;
     font-weight: bold;
-    color: #333333; }
+    color: #326891; }
   .mobile-footer .button {
     border: none;
     background: none;
@@ -5245,7 +5245,7 @@ h3 {
   h2 a:hover,
   h3 a,
   h3 a:hover {
-    color: #326891; }
+    color: #606974; }
 
 .top-news .row:last-child,
 .subsection .row:last-child {
@@ -5284,6 +5284,8 @@ ul.headlines li:not(:last-child) {
 ul.headlines li h3 {
   padding: 10px 0;
   font-weight: normal; }
+ul.headlines li a {
+  color: #333333; }
 
 .subsection .subsection-header {
   margin: 8px 0 1px;
@@ -5292,13 +5294,13 @@ ul.headlines li h3 {
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee; }
   .subsection .subsection-header a {
-    color: #606974; }
+    color: #333333; }
 
 .subsection-related .subsection-related-list li {
   padding: .5em;
   border-bottom: 1px solid #eeeeee; }
 .subsection-related .subsection-related-list a {
-  color: #333333;
+  color: #326891;
   font-size: 1em; }
 
 figure.lede-image {
@@ -5331,7 +5333,7 @@ article h1 {
 
 .share-tools-list .button,
 .share-tools-list-bottom .button {
-  color: #326891;
+  color: #606974;
   border: none;
   background: none;
   padding: 0; }
