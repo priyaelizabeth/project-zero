@@ -60,6 +60,7 @@ ChoiceyApp = {
 		this.toggleChoicey();
 		this.shuffle(s.pool);
 		this.bindUIActions();
+		console.log('option-counter is ' + s.oCounter);
 	},
 
 	bindUIActions: function() {
@@ -72,6 +73,7 @@ ChoiceyApp = {
 		// for debugging...
 		s.resetBtn.on("click", function() {
 			localStorage.removeItem('option-counter');
+			console.log('removing option-counter');
 		});
 	},
 
@@ -107,6 +109,7 @@ ChoiceyApp = {
 				});
 			});
 			localStorage.setItem('option-counter',s.oCounter+=1);
+			console.log('setting option-counter to ' + s.oCounter);
 			
 		} else {
 			ChoiceyApp.finish();
