@@ -127,6 +127,7 @@ ul {
 	&.tiny { font-size: emCalc(11); }
 	&.small { font-size: emCalc(12); }
 	&.medium { 
+		color: #fff;
 		font-size: emCalc(14); 
 		font-weight: normal;
 		-webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.25);
@@ -139,6 +140,7 @@ ul {
 			color-stop(0.18, rgb(96,105,116)),
 			color-stop(0.8, rgb(111,121,133))
 		);
+		&:hover { color: #fff; }
 	}
 	i {
 		display: inline-block;
@@ -436,13 +438,6 @@ ul.headlines {
 	}
 }
 
-.quickreads-button a,
-#refresh-choices,
-#home-btn {
-	color: #fff;
-	&:hover { color: #fff; }
-}
-
 // ARTICLE
 
 figure.lede-image {
@@ -624,4 +619,13 @@ article {
 
 .refresh {
 	font-size: emCalc(18);
+}
+
+// Start screen
+#participant #name {
+	float: right;
+}
+
+#participant #submit {
+	float: left;
 }

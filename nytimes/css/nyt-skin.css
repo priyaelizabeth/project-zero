@@ -5091,12 +5091,15 @@ ul.disc li {
   .button.small {
     font-size: 0.75em; }
   .button.medium {
+    color: #fff;
     font-size: 0.875em;
     font-weight: normal;
     -webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.25);
     -moz-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.25);
     box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.25);
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.18, #606974), color-stop(0.8, #6f7985)); }
+    .button.medium:hover {
+      color: #fff; }
   .button i {
     display: inline-block;
     text-indent: -9999px; }
@@ -5339,15 +5342,6 @@ ul.headlines li a {
   height: 16px;
   background: url("../../spectrum/images/sprite-spectrum-1x.png") no-repeat 0 -116px; }
 
-.quickreads-button a,
-#refresh-choices,
-#home-btn {
-  color: #fff; }
-  .quickreads-button a:hover,
-  #refresh-choices:hover,
-  #home-btn:hover {
-    color: #fff; }
-
 figure.lede-image {
   margin-bottom: 1em; }
 
@@ -5517,3 +5511,9 @@ article h1 {
 
 .refresh {
   font-size: 1.125em; }
+
+#participant #name {
+  float: right; }
+
+#participant #submit {
+  float: left; }
