@@ -5115,6 +5115,10 @@ ul.disc li {
   padding-bottom: .5em;
   border-bottom: 1px solid #eeeeee; }
 
+.columns {
+  padding-left: .5em;
+  padding-right: .5em; }
+
 .mobile-nav {
   margin: 5px 0; }
   .mobile-nav .masthead-row {
@@ -5291,6 +5295,8 @@ h3 {
     line-height: 1.5;
     color: #999999; }
   .story .thumb {
+    width: 75px;
+    height: 75px;
     float: right;
     margin: 0 0 0.625em 0.625em; }
   .story .thumb.float-left {

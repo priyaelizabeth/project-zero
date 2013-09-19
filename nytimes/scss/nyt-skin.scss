@@ -157,7 +157,6 @@ ul {
 	padding-bottom: .5em;
 	@include thin-border(bottom);
 }
-
 // Header & footer
 .mobile-nav {
 	margin: 5px 0;
@@ -370,6 +369,8 @@ h3 {
 		color: $summary-color;
 	}
 	.thumb {
+		width: 75px;
+		height: 75px;
 		float: right;
 		margin: 0 0 emCalc(10) emCalc(10);
 	}
