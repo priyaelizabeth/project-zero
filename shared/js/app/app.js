@@ -9,6 +9,7 @@ ChoiceyApp = {
 		greetingEl: $("#greeting"),
 		greetings: [
 			"OK, have you heard about:",
+			"Alright, how about:",
 			"Hmm, what about:"
 		],
 		stories: [$("#option-1"),$("#option-2")],
@@ -40,7 +41,7 @@ ChoiceyApp = {
 				{ image: 'images/food.jpg', headline: 'Fast Foods on the High Seas', link: 'article/cruise-ship-fast-food.html' }
 			]
 		],
-		oString: '<a href="{1}"><img class="thumb" src="{0}"><h2>{2}</a></h2>',
+		oString: '<a href="{1}"><img class="thumb" src="{0}"><h2>{2}</h2></a>',
 		oCounter: parseInt(localStorage.getItem('option-counter'),10) || 0,
 		maxOptions:0,
 		maxGreetings:0,
@@ -57,12 +58,29 @@ ChoiceyApp = {
 		s = this.settings;
 		s.maxOptions = s.pool.length;
 		s.maxGreetings = s.greetings.length;
+		this.insertUserName();
 		this.toggleChoicey();
 		this.shuffle(s.pool);
 		this.bindUIActions();
 		console.log('option-counter is ' + s.oCounter);
 	},
-
+	
+	insertUserName: function(){
+		var name = localStorage.getItem('username');
+		if(name) {
+			s.greetings[0] = "OK " + name + ", have you heard about:";
+		}
+	},
+	
+	refreshApp: function(){
+		localStorage.removeItem('username');
+		localStorage.removeItem('option-counter');
+		$("#submit").click(function(e){
+			localStorage.setItem('username',$("#name").val());
+			window.location = "index.html";
+		});
+	},
+	
 	bindUIActions: function() {
 		s.backBtn.on("click", function() {
 			ChoiceyApp.goBack();
@@ -73,7 +91,7 @@ ChoiceyApp = {
 		// for debugging...
 		s.resetBtn.on("click", function() {
 			localStorage.removeItem('option-counter');
-			console.log('removing option-counter');
+			localStorage.removeItem('username');
 		});
 	},
 
@@ -93,7 +111,12 @@ ChoiceyApp = {
 			$('<img src="'+ s.finished.img + '" alt="Check mark" class="no-more-check">').insertBefore(s.greetingEl);
 		} else {
 			s.greetingEl.text(s.greetings[s.gCounter]);
-			s.gCounter < s.maxGreetings-1 ? s.gCounter++ : s.gCounter = 0;
+			if(s.gCounter < s.maxGreetings - 1) {
+				s.gCounter++;
+			} else {
+				s.gCounter = 0;
+				s.greetings[0] = "OK, have you heard about:"
+			}
 		}
 	},
 	
