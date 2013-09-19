@@ -5039,7 +5039,8 @@ article .dateline,
 .button,
 .logo,
 .logo-small .sub-head,
-.greeting {
+.greeting,
+#participant {
   font-family: Arial, Helvetica, sans-serif; }
 
 .subsection-header {
