@@ -5115,10 +5115,6 @@ ul.disc li {
   padding-bottom: .5em;
   border-bottom: 1px solid #eeeeee; }
 
-.columns {
-  padding-left: .5em;
-  padding-right: .5em; }
-
 .mobile-nav {
   margin: 5px 0; }
   .mobile-nav .masthead-row {
@@ -5128,11 +5124,11 @@ ul.disc li {
     .mobile-nav .masthead-row .masthead-buttons-left {
       padding-left: 2px; }
   .mobile-nav .logo {
-    height: 47px; }
+    height: 40px; }
     .mobile-nav .logo a {
-      background: url("../images/sprite-1x.png") 0 -193px;
+      background: url("../images/sprite-1x.png") 0 6px;
       width: 184px;
-      height: 47px;
+      height: 33px;
       text-indent: -9999px;
       display: block;
       margin: auto; }
