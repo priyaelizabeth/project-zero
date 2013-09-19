@@ -5063,7 +5063,7 @@ ul.disc li {
 .timestamp {
   color: #ec8681;
   font-weight: normal;
-  font-size: 0.75em;
+  font-size: 0.6875em;
   text-transform: uppercase; }
 
 .button {
@@ -5297,15 +5297,22 @@ ul.headlines li h3 {
   color: #a0a5ac;
   font-size: 1em; }
 
-.quickreads-button a {
-  vertical-align: top;
-  line-height: 18px; }
-  .quickreads-button a span {
-    vertical-align: 2px; }
-.quickreads-button i {
-  width: 16px;
-  height: 16px;
-  background: url("../images/sprite-spectrum-1x.png") no-repeat 0 -116px; }
+.quickreads-button {
+  margin-top: -13px;
+  margin-bottom: -8px;
+  padding: 1em;
+  width: 100%;
+  background-color: #f7f8f8; }
+  .quickreads-button h2 {
+    font-size: 0.875em;
+    font-weight: bold;
+    color: #606974; }
+  .quickreads-button i {
+    width: 28px;
+    height: 32px;
+    background: url("../images/sprite-spectrum-1x.png") no-repeat 0 -142px;
+    margin-right: 10px;
+    float: left; }
 
 figure.lede-image {
   margin-bottom: 1em; }

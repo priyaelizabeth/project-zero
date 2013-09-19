@@ -96,7 +96,7 @@ ul {
 .timestamp {
 	color: $alert-color;
 	font-weight: normal;
-	font-size: emCalc(12);
+	font-size: emCalc(11);
 	text-transform: uppercase;
 }
 .button {
@@ -388,19 +388,25 @@ ul.headlines {
 }
 
 .quickreads-button {
-	a {
-		vertical-align: top;
-		line-height: 18px;
-		span {
-			vertical-align: 2px;
-		}
-	}
-	i {
-		width: 16px;
-		height: 16px;
-		background: url($icon-sprite) no-repeat 0 -116px;
-	}
+	margin-top: -13px;
+	margin-bottom: -8px;
+	padding: 1em;
+	width: 100%;
+	background-color: #f7f8f8;
+		h2 {
+		font-size: emCalc(14);
+		font-weight: bold;
+		color: $link-color;
+		}	
+			i {
+				width: 28px;
+				height: 32px;
+				background: url($icon-sprite) no-repeat 0 -142px;
+				margin-right: 10px;
+				float: left;
+			}
 }
+
 
 // ARTICLE
 
