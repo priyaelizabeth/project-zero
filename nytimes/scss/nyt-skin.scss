@@ -425,18 +425,27 @@ ul.headlines {
 }
 
 .quickreads-button {
-	a {
-		vertical-align: top;
-		line-height: 18px;
-		span {
-			vertical-align: 2px;
+	width: 100%;
+	margin-top: -13px;
+	margin-bottom: -8px;
+	border-bottom: 1px solid #eee; 
+	padding: 1em;
+	background: #f7f8f8 url(../images/arrow.png) no-repeat 280px 20px;
+	background-size: 13px 22px;
+
+		h2 {
+		font-size: emCalc(14);
+		font-weight: bold;
+		color: $link-color;
+		}	
+
+		i {
+			width: 28px;
+			height: 32px;
+			background: url($icon-sprite) no-repeat 0 -142px;
+			margin-right: 10px;
+			float: left;
 		}
-	}
-	i {
-		width: 16px;
-		height: 16px;
-		background: url($icon-sprite-spectrum) no-repeat 0 -116px;
-	}
 }
 
 // ARTICLE
