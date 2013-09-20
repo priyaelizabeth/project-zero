@@ -5298,11 +5298,13 @@ ul.headlines li h3 {
   font-size: 1em; }
 
 .quickreads-button {
+  width: 100%;
   margin-top: -13px;
   margin-bottom: -8px;
+  border-bottom: 1px solid #eee;
   padding: 1em;
-  width: 100%;
-  background-color: #f7f8f8; }
+  background: #f7f8f8 url(../images/arrow.png) no-repeat 280px 20px;
+  background-size: 13px 22px; }
   .quickreads-button h2 {
     font-size: 0.875em;
     font-weight: bold;

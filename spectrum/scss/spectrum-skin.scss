@@ -388,23 +388,27 @@ ul.headlines {
 }
 
 .quickreads-button {
+	width: 100%;
 	margin-top: -13px;
 	margin-bottom: -8px;
+	border-bottom: 1px solid #eee; 
 	padding: 1em;
-	width: 100%;
-	background-color: #f7f8f8;
+	background: #f7f8f8 url(../images/arrow.png) no-repeat 280px 20px;
+	background-size: 13px 22px;
+
 		h2 {
 		font-size: emCalc(14);
 		font-weight: bold;
 		color: $link-color;
 		}	
-			i {
-				width: 28px;
-				height: 32px;
-				background: url($icon-sprite) no-repeat 0 -142px;
-				margin-right: 10px;
-				float: left;
-			}
+
+		i {
+			width: 28px;
+			height: 32px;
+			background: url($icon-sprite) no-repeat 0 -142px;
+			margin-right: 10px;
+			float: left;
+		}
 }
 
 
