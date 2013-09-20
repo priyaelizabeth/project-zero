@@ -5076,9 +5076,10 @@ ul.disc li {
   float: right; }
 
 .timestamp {
+  font-family: Arial, Helvetica, sans-serif;
   color: #ec8681;
   font-weight: normal;
-  font-size: 0.75em;
+  font-size: 0.625em;
   text-transform: uppercase; }
 
 .button {
@@ -5130,7 +5131,7 @@ ul.disc li {
   .mobile-nav .logo {
     height: 40px; }
     .mobile-nav .logo a {
-      background: url("../images/sprite-1x.png") 0 6px;
+      background: url("../images/sprite-1x.png") 0 4px;
       width: 184px;
       height: 33px;
       text-indent: -9999px;
@@ -5304,7 +5305,7 @@ h3 {
     margin: 0 0.625em 0.625em 0; }
 
 .homepage .story:first-child {
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid #eeeeee; }
 
 .homepage .story:last-child {
   border-bottom: none; }
@@ -5333,15 +5334,24 @@ ul.headlines li a {
   color: #326891;
   font-size: 1em; }
 
-.quickreads-button a {
-  vertical-align: top;
-  line-height: 18px; }
-  .quickreads-button a span {
-    vertical-align: 2px; }
-.quickreads-button i {
-  width: 16px;
-  height: 16px;
-  background: url("../../spectrum/images/sprite-spectrum-1x.png") no-repeat 0 -116px; }
+.quickreads-button {
+  width: 100%;
+  margin-top: -13px;
+  margin-bottom: -8px;
+  border-bottom: 1px solid #eee;
+  padding: 1em;
+  background: #f7f8f8 url(../images/arrow.png) no-repeat 280px 20px;
+  background-size: 13px 22px; }
+  .quickreads-button h2 {
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: normal; }
+  .quickreads-button i {
+    width: 28px;
+    height: 32px;
+    background: url("../../spectrum/images/sprite-spectrum-1x.png") no-repeat 0 -142px;
+    margin-right: 10px;
+    float: left; }
 
 figure.lede-image {
   margin-bottom: 1em; }

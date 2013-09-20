@@ -113,9 +113,10 @@ ul {
 }
 
 .timestamp {
+	font-family: $arial;
 	color: $alert-color;
 	font-weight: normal;
-	font-size: emCalc(12);
+	font-size: emCalc(10);
 	text-transform: uppercase;
 }
 
@@ -171,7 +172,7 @@ ul {
 	.logo {
 		height: 40px;
 		a {
-			background: url($icon-sprite) 0 6px;
+			background: url($icon-sprite) 0 4px;
 			width: 184px;
 			height: 33px;
 			text-indent: -9999px;
@@ -384,7 +385,7 @@ h3 {
 }
 
 .homepage .story:first-child {
-	@include thin-border(bottom, $border-color-dk);
+	@include thin-border(bottom, $border-color);
 }
 
 .homepage .story:last-child {
@@ -436,13 +437,13 @@ ul.headlines {
 		h2 {
 		font-size: emCalc(14);
 		font-weight: bold;
-		color: $link-color;
+		line-height: normal;
 		}	
 
 		i {
 			width: 28px;
 			height: 32px;
-			background: url($icon-sprite) no-repeat 0 -142px;
+			background: url($icon-sprite-spectrum) no-repeat 0 -142px;
 			margin-right: 10px;
 			float: left;
 		}
