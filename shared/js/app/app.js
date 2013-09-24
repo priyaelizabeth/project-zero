@@ -8,7 +8,7 @@ ChoiceyApp = {
 		resetBtn: $('.nav-sections-button a'),
 		greetingEl: $("#greeting"),
 		greetings: [
-			"OK, have you heard about:",
+			"OK, do you want to hear about:",
 			"Alright, how about:",
 			"Hmm, what about:"
 		],
@@ -68,7 +68,7 @@ ChoiceyApp = {
 	insertUserName: function(){
 		var name = localStorage.getItem('username');
 		if(name) {
-			s.greetings[0] = "OK " + name + ", have you heard about:";
+			s.greetings[0] = "OK " + name + ", do you want to hear about:";
 		}
 	},
 	
